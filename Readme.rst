@@ -25,7 +25,7 @@ Actually, the following features are supported:
 * Default CSS files for quick testing or prototyping
 * A few ready-to-use plugins:
   
-  * :ref:`orbit-slider`
+  * Orbit slider
   * Clearing lightbox
   * Flexible video container
 
