@@ -1,0 +1,17 @@
+{namespace c=Cbrunet\CbFoundation\ViewHelpers}
+
+<ul class="clearing-thumbs" data-clearing>
+	<c:fal uid="{data.uid}">
+		<f:for each="{objects}" as="image">
+			<li>
+				<a href="{image.publicUrl}" class="th">
+					<c:image src="{image.publicUrl}"
+							 alt="{image.alternative}"
+							 width="{f:if(condition: data.imagewidth, then: '{data.imagewidth}c')}"
+							 height="{f:if(condition: data.imageheight, then: '{data.imageheight}c')}"
+							 data-caption="{image.description}" />
+				</a>
+			</li>
+		</f:for>
+	</c:fal>
+</ul>

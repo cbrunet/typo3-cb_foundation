@@ -1,0 +1,15 @@
+{namespace c=Cbrunet\CbFoundation\ViewHelpers}
+
+Foundation: <strong>
+	<f:if condition="{data.CType} == 'cbfoundation_orbit'">Orbit Slider</f:if>
+	<f:if condition="{data.CType} == 'cbfoundation_clearing'">Clearing Lightbox</f:if>
+</strong><br/>
+<c:fal uid="{data.uid}">
+	<f:for each="{objects}" as="image">
+		<c:beimage src="{image.publicUrl}"
+				 alt="{image.alternative}"
+				 title="{image.description}"
+				 maxWidth="64"
+				 maxHeight="64"/>
+	</f:for>
+</c:fal>

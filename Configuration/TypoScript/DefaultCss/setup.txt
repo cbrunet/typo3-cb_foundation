@@ -1,0 +1,3 @@
+
+page.includeCSS.normalize = {$plugin.tx_cbfoundation.settings.normalize_path}
+page.includeCSS.foundation = {$plugin.tx_cbfoundation.settings.css_path}

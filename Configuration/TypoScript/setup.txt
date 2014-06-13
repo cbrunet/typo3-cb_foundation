@@ -1,0 +1,54 @@
+
+plugin.tx_cbfoundation {
+	view {
+		templateRootPath = {$plugin.tx_cbfoundation.view.templateRootPath}
+		partialRootPath = {$plugin.tx_cbfoundation.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_cbfoundation.view.layoutRootPath}
+	}
+}
+
+
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.viewport}]
+	page.headerData.65 = TEXT
+	page.headerData.65.stdWrap.wrap = <meta name="viewport" content="|" />
+	page.headerData.65.value = width=device-width, initial-scale=1.0
+[global]
+
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.js.modernizr}]
+	config.htmlTag_setParams = class="no-js"
+	page.includeJS.modernizr = EXT:cb_foundation/Resources/Public/JavaScript/vendor/modernizr.js
+[global]
+
+
+[globalVar = LIT:ext = {$plugin.tx_cbfoundation.settings.js.jquery}]
+	page.includeJSFooter.jquery = EXT:cb_foundation/Resources/Public/JavaScript/vendor/jquery.js
+[global]
+[globalVar = LIT:typo3 = {$plugin.tx_cbfoundation.settings.js.jquery}]
+	page.javascriptLibs {
+	  jQuery = 1
+	  jQuery.version = latest
+	  jQuery.source = local
+	  jQuery.noConflict = 0
+	}
+[global]
+
+
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.js.loadall}]
+	page.includeJSFooter.foundation = EXT:cb_foundation/Resources/Public/JavaScript/foundation.min.js
+[global]
+
+page.jsFooterInline.65 = COA
+page.jsFooterInline.65 {
+	10 = TEXT
+	10.value = $(document).foundation(
+	20 = COA
+	20.stdWrap.wrap = {|}
+	20.stdWrap.required = 1
+	30 = TEXT
+	30.value = );
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Orbit/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Clearing/setup.ts">
+
+

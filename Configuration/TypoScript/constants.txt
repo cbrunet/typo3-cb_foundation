@@ -1,0 +1,33 @@
+
+#customsubcategory=js=JavaScript
+#customsubcategory=page=Page
+
+plugin.tx_cbfoundation {
+
+	view {
+		# cat=foundation/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:cb_foundation/Resources/Private/Templates/
+		# cat=foundation/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:cb_foundation/Resources/Private/Partials/
+		# cat=foundation/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:cb_foundation/Resources/Private/Layouts/
+	}
+
+	settings {
+		#cat=foundation/page/a; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:viewport
+		viewport = 1
+	
+		js {
+			#cat=foundation/js/a; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:js.loadall
+			loadall = 1
+			#cat=foundation/js/b; type=options[no,ext,typo3]; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:js.jquery
+			jquery = typo3
+			#cat=foundation/js/c; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:js.modernizr
+			modernizr = 1
+		}
+	}
+	
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Orbit/constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Clearing/constants.ts">

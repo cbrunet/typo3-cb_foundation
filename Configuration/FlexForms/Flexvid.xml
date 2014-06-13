@@ -1,0 +1,37 @@
+ <T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+  </meta>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:flexvid.sheetTitle</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.flexvid.style>
+            <TCEforms>
+              <label>LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:flexvid.style</label>
+              <config>
+                <type>check</type>
+                <cols>2</cols>
+                <default>1</default>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:flexvid.widescreen</numIndex>
+                    <numIndex index="1">1</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:flexvid.vimeo</numIndex>
+                    <numIndex index="1">1</numIndex>
+                  </numIndex>
+                </items>
+              </config>
+            </TCEforms>
+          </settings.flexvid.style>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>

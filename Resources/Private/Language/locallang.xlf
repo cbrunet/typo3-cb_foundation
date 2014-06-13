@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-03-26T12:27:09Z" product-name="cb_foundation">
+		<header/>
+		<body>
+		<trans-unit id="normalize_path" xml:space="preserve">
+            	<source>Path to normalize.css file.</source>
+        	</trans-unit>
+        	<trans-unit id="css_path" xml:space="preserve">
+            	<source>Path to foundation.css file.</source>
+        	</trans-unit>
+			<trans-unit id="js.loadall" xml:space="preserve">
+            	<source>Include all: Include all Foundation JS libraries.</source>
+        	</trans-unit>
+            <trans-unit id="js.jquery" xml:space="preserve">
+				<source>Include jquery: Include from TYPO3, from this extension, or do not include it.</source>
+			 </trans-unit>
+             <trans-unit id="js.modernizr" xml:space="preserve">
+             	<source>Include modernizr.</source>
+             </trans-unit>
+             <trans-unit id="viewport" xml:space="preserve">
+             	<source>Add viewport meta tag.</source>
+             </trans-unit>
+             <trans-unit id="orbit.animation" xml:space="preserve">
+            	<source>Animation style: Sets the type of animation used for transitioning between slides (default: slide).</source>
+             </trans-unit>
+             <trans-unit id="orbit.timer_speed" xml:space="preserve">
+             	<source>Timer speed: Sets the amount of time in milliseconds before transitioning a slide (default: 10000).</source>
+             </trans-unit>
+             <trans-unit id="orbit.pause_on_hover" xml:space="preserve">
+             	<source>Pause on hover: Pauses on the current slide while hovering (default: true).</source>
+             </trans-unit>
+             <trans-unit id="orbit.resume_on_mouseout" xml:space="preserve">
+             	<source>Resume on mouseout: If pause on hover is set to true, this setting resumes playback after mousing out of slide (default: false).</source>
+             </trans-unit>
+             <trans-unit id="orbit.next_on_click" xml:space="preserve">
+             	<source>Next on click: Advance to next slide on click (default: true).</source>
+             </trans-unit>
+             <trans-unit id="orbit.animation_speed" xml:space="preserve">
+             	<source>Animation speed: Sets the amount of time in milliseconds the transition between slides will last (default: 500).</source>
+             </trans-unit>
+             <trans-unit id="orbit.stack_on_small" xml:space="preserve">
+             	<source>Stack on small: (default: false).</source>
+             </trans-unit>
+             <trans-unit id="orbit.navigation_arrows" xml:space="preserve">
+             	<source>Navigation arrows:  (default: true).</source>
+             </trans-unit>
+             <trans-unit id="orbit.slide_number" xml:space="preserve">
+             	<source>Slide number: (default: true).</source>
+             </trans-unit>
+             <trans-unit id="orbit.slide_number_text" xml:space="preserve">
+             	<source>Slide number text: (default: 'of').</source>
+             </trans-unit>
+             <trans-unit id="orbit.container_class" xml:space="preserve">
+             	<source>Container class: (default: 'orbit-container').</source>
+             </trans-unit>
+             <trans-unit id="orbit.stack_on_small_class" xml:space="preserve">
+             	<source>Stack on small class: (default: 'orbit-stack-on-small').</source>
+             </trans-unit>
+             <trans-unit id="orbit.next_class" xml:space="preserve">
+             	<source>Next class: Class name given to the next button (default: 'orbit-next').</source>
+             </trans-unit>
+             <trans-unit id="orbit.prev_class" xml:space="preserve">
+             	<source>Prev class: Class name given to the previous button (default: 'orbit-prev').</source>
+             </trans-unit>
+             <trans-unit id="orbit.timer_container_class" xml:space="preserve">
+             	<source>Timer container class: Class name given to the timer (default: 'orbit-timer').</source>
+             </trans-unit>
+             <trans-unit id="orbit.timer_paused_class" xml:space="preserve">
+             	<source>Timer paused class: Class name given to the paused button (default: 'paused').</source>
+             </trans-unit>
+             <trans-unit id="orbit.timer_progress_class" xml:space="preserve">
+             	<source>Timer progress class: Class name given to the progress bar (default: 'orbit-progress').</source>
+             </trans-unit>
+             <trans-unit id="orbit.slides_container_class" xml:space="preserve">
+             	<source>Slides container class: (default: 'orbit-slides-container').</source>
+             </trans-unit>
+             <trans-unit id="orbit.bullets_container_class" xml:space="preserve">
+             	<source>Bullets container class: (default: 'orbit-bullets').</source>
+             </trans-unit>
+             <trans-unit id="orbit.slide_selector" xml:space="preserve">
+             	<source>Slide selector: (default: 'li').</source>
+             </trans-unit>
+             <trans-unit id="orbit.bullets_active_class" xml:space="preserve">
+             	<source>Bullets active class: Class name given to the active bullet (default: 'active').</source>
+             </trans-unit>
+             <trans-unit id="orbit.slide_number_class" xml:space="preserve">
+             	<source>Slide number class: Class name given to the slide number (default: 'orbit-slide-number').</source>
+             </trans-unit>
+             <trans-unit id="orbit.caption_class" xml:space="preserve">
+             	<source>Caption class: Class name given to the caption (default: 'orbit-caption').</source>
+             </trans-unit>
+             <trans-unit id="orbit.active_slide_class" xml:space="preserve">
+             	<source>Active slide class: Class name given to the active slide (default: 'active').</source>
+             </trans-unit>
+             <trans-unit id="orbit.orbit_transition_class" xml:space="preserve">
+             	<source>Orbit transition class: (default: 'orbit-transitioning').</source>
+             </trans-unit>
+             <trans-unit id="orbit.bullets" xml:space="preserve">
+             	<source>Bullets: Does the slider have bullets visible? (default: true).</source>
+             </trans-unit>
+             <trans-unit id="orbit.circular" xml:space="preserve">
+             	<source>Circular: Does the slider should go to the first slide after showing the last? (default: true).</source>
+             </trans-unit>
+             <trans-unit id="orbit.timer" xml:space="preserve">
+             	<source>Timer: Does the slider have a timer visible? (default: true).</source>
+             </trans-unit>
+             <trans-unit id="orbit.variable_height" xml:space="preserve">
+             	<source>Variable height: Does the slider have variable height content? (default: false).</source>
+             </trans-unit>
+             <trans-unit id="orbit.swipe" xml:space="preserve">
+             	<source>Swipe: (default: true).</source>
+             </trans-unit>
+             <trans-unit id="orbit.before_slide_change" xml:space="preserve">
+             	<source>Before slide change: Execute a function before the slide changes (default: noop).</source>
+             </trans-unit>
+             <trans-unit id="orbit.after_slide_change" xml:space="preserve">
+             	<source>After slide change: Execute a function after the slide changes (default: noop).</source>
+             </trans-unit>
+             <trans-unit id="clearing.close_selectors" xml:space="preserve">
+             	<source>Close selectors: Specify the classes or IDs will close clearing when clicked. (default: '.clearing-close').</source>
+             </trans-unit>
+             <trans-unit id="clearing.touch_label" xml:space="preserve">
+             	<source>Touch label: (default: '&amp;larr;&amp;nbsp;Swipe to Advance&amp;nbsp;&amp;rarr;').</source>
+             </trans-unit>
+		</body>
+	</file>
+</xliff>

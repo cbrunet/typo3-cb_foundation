@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-03-26T12:27:09Z" product-name="cb_foundation">
+        <header/>
+        <body>
+            <trans-unit id="palette.source" xml:space="preserve">
+                <source>Source</source>
+            </trans-unit>
+            <trans-unit id="flexvid.sheetTitle" xml:space="preserve">
+                <source>Flexible Video Options</source>
+            </trans-unit>
+            <trans-unit id="flexvid.style" xml:space="preserve">
+                <source>Style (CSS classes)</source>
+            </trans-unit>
+            <trans-unit id="flexvid.widescreen" xml:space="preserve">
+                <source>Widescreen</source>
+            </trans-unit>
+            <trans-unit id="flexvid.vimeo" xml:space="preserve">
+                <source>Vimeo</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
