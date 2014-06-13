@@ -79,3 +79,32 @@ and I am glad to share it with the rest of the world. I am not responsible of
 any trouble that could occur by the use of this extension.
 
 .. _zurb: http://zurb.com/
+
+
+Similar projects
+================
+
+I am aware some other TYPO3 extensions are integrating Foundation Framework to TYPO3.
+I did not really tried them. However, from the manual of the respective extensions,
+it seems those extensions are taking a different approach than me. This is why I think
+my extension can be a useful contribution.
+
+Here is a list of the similar extensions I found on TER. Please feel free to send me
+any additions of corrections to this list.
+
+df_foundation5_
+    Actively maintained. Incomplete manual. Seems to provide exactly opposite functionalities
+    than what is provided by my extension. Provides responsive settings for images.
+    Other Foundation functionalities are integrated to the
+    site template using TypoScript (no plugins provided). Does not support TYPO3 6.2 yet.
+
+orbit_foundation_, orbitextented_
+    Plugin that uniquely provides Orbit Slider. Incomplete documentation.
+
+t3foundation_
+    No manual provided, so I cannot tell what this extension does exactly.
+
+.. _df_foundation5: http://typo3.org/extensions/repository/view/df_foundation5/
+.. _orbit_foundation: http://typo3.org/extensions/repository/view/orbit_foundation/
+.. _orbitextended: http://typo3.org/extensions/repository/view/orbitextended/
+.. _t3foundation: http://typo3.org/extensions/repository/view/t3foundation/
