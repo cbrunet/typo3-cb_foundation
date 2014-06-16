@@ -55,3 +55,6 @@ Change Log
 
 .. _TYPO3 extension repository: http://typo3.org/extensions/
 .. _Zurb Foundation: http://foundation.zurb.com/
+
+1.0.1: June 15, 2014
+    * Minor bug that prevented documentation generation
