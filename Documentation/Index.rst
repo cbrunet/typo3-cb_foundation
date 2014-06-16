@@ -98,7 +98,7 @@ df_foundation5_
     Other Foundation functionalities are integrated to the
     site template using TypoScript (no plugins provided). Does not support TYPO3 6.2 yet.
 
-orbit_foundation_, orbitextented_
+orbit_foundation_, orbitextended_
     Plugin that uniquely provides Orbit Slider. Incomplete documentation.
 
 t3foundation_
