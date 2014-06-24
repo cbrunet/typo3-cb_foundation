@@ -7,6 +7,8 @@
 .. Includes roles, substitutions, ...
 .. include:: _IncludedDirectives.rst
 
+.. _start:
+
 ====================
 Foundation framework
 ====================
@@ -17,7 +19,7 @@ Foundation framework
 :Description: manuals covering TYPO3 extension "Foundation framework"
 :Language: en
 :Author: Charles Brunet
-:Creation: 2014-06-12
+:Creation: 2014-06-23
 :Generation: |time|
 :Licence: Open Content License available from `www.opencontent.org/opl.shtml <http://www.opencontent.org/opl.shtml>`_
 
@@ -63,8 +65,8 @@ Actually, the following features are supported:
 * A few ready-to-use plugins:
   
   * :ref:`orbit-slider`
-  * Clearing lightbox
-  * Flexible video container
+  * :ref:`clearing-lightbox`
+  * :ref:`flexvid`
 
 More feature will peoabably be added in future releases.
 

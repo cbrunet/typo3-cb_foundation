@@ -1,11 +1,11 @@
 conf.py:
   copyright: 2014
   project: Foundation framework
-  version: 1.0
-  release: 1.0.0
+  version: 1.1
+  release: 1.1.0
   latex_documents:
   - - Index
-    - foundation.tex
+    - cb_foundation.tex
     - Foundation framework
     - Charles Brunet
     - manual
