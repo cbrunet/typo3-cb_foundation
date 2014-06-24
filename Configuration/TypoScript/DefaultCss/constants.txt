@@ -2,5 +2,5 @@ plugin.tx_cbfoundation.settings {
 	# cat=foundation/file/a; type=file[css]; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:normalize_path
 	normalize_path = EXT:cb_foundation/Resources/Public/Css/normalize.css
 	# cat=foundation/file/b; type=file[css]; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:css_path
-	css_path = EXT:cb_foundation/Resources/Public/Css/foundation.min.css
+	css_path = EXT:cb_foundation/Resources/Public/Css/foundation.css
 }
