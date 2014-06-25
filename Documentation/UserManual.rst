@@ -12,7 +12,7 @@ JavaScript functions you can integrate to your website.
 In fact, you can use anything that is in the `official documentation`_.
 
 You simply need to integrade the needed markups and CSS classes to 
-your HTML or Fluid templates.
+your HTML or Fluid templates. Here are some :ref:`examples`.
 
 However, to simplify the process, we already provide you some 
 plugins you can directly integrate to the content of your website.

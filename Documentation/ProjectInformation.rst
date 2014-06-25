@@ -42,6 +42,8 @@ There is still a lot to do on this project. Here are some random ideas:
 * Improve documentation, add some examples...
 * Integrate functionnalities with RTE (buttons, labels, keystrokes, tooltips...)
 * Provide other plugins (breakcrumbs, magellan sticky nav, ...)
+* Include a SASS compiler
+* Replace Orbit with Slick Carousel
 
 
 Change Log

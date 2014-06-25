@@ -1,4 +1,4 @@
-.. include:: _IncludedDirectives.rst
+.. _introduction:
 
 ============
 Introduction
@@ -31,7 +31,7 @@ Actually, the following features are supported:
 * Includes all SCSS files needed for customizing the CSS
 * Default CSS files for quick testing or prototyping
 * A few ready-to-use plugins:
-  
+
   * :ref:`orbit-slider`
   * :ref:`clearing-lightbox`
   * :ref:`flexvid`
@@ -63,7 +63,7 @@ Here is a list of the similar extensions I found on TER. Please feel free to sen
 any additions of corrections to this list.
 
 Extensions providing Foundation framework
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------
 
 df_foundation5_
     Actively maintained. Incomplete manual. Seems to provide exactly opposite functionalities
@@ -75,7 +75,7 @@ t3foundation_
     No manual provided, so I cannot tell what this extension does exactly.
 
 Extensions using Foundation framework
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
 orbit_foundation_, orbitextended_
     Plugin that uniquely provides Orbit Slider. Incomplete documentation.
@@ -87,4 +87,4 @@ tabs_foundation_
 .. _orbit_foundation: http://typo3.org/extensions/repository/view/orbit_foundation/
 .. _orbitextended: http://typo3.org/extensions/repository/view/orbitextended/
 .. _t3foundation: http://typo3.org/extensions/repository/view/t3foundation/
-.. _tabs_foundatoin: http://typo3.org/extensions/repository/view/tabs_foundation/
+.. _tabs_foundation: http://typo3.org/extensions/repository/view/tabs_foundation/

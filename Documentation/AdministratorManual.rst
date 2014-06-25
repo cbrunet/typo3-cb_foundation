@@ -22,6 +22,13 @@ Foundation framework (default CSS)
   purposes. However, on a real website, you should consider customizing Foundation CSS, and thus you would not
   need to load this static template.
 
+
+Upgrading
+---------
+
+When you upgrade Foundation framework, do not forget to regenerate the CSS files of your project against
+the new Foundation SCSS files. 
+
 .. _configuration:
 
 Configuration
