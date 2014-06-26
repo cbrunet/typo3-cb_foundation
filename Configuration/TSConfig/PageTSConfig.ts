@@ -20,6 +20,12 @@ mod.wizards.newContentElement.wizardItems.tx_cbfoundation {
             description = Flexible Video Container
             tt_content_defValues.CType = cbfoundation_flexvid
         }
+        breadcrumbs {
+            icon = ../typo3conf/ext/cb_foundation/Resources/Public/Icons/breadcrumbs.gif
+            title = Breadcrumbs
+            description = Breadcrumbs navigation (rootline)
+            tt_content_defValues.CType = cbfoundation_breadcrumbs
+        }
     }
-    show = orbit, clearing, flexvid
+    show = orbit, clearing, flexvid, breadcrumbs
 }

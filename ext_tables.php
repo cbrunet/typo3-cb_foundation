@@ -14,6 +14,8 @@ if (!defined('TYPO3_MODE')) {
 		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/clearing_ct.gif');
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($_EXTKEY, 'Flexvid', 'Flexible Video',
 		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/flexvid_ct.gif');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Breadcrumbs navigation', 'cbfoundation_breadcrumbs',
+		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/breadcrumbs_ct.gif'), 'CType');
 
 
 $TCA['tt_content']['types']['cbfoundation_orbit']['showitem'] = "--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
@@ -43,6 +45,12 @@ $TCA['tt_content']['types']['cbfoundation_flexvid']['showitem'] = "--palette--;L
 																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
 																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access";
 $TCA['tt_content']['columns']['pi_flexform']['config']['ds']['*,cbfoundation_flexvid'] = 'FILE:EXT:cb_foundation/Configuration/FlexForms/Flexvid.xml';
-// définir flexform
-// lire valeurs et reporter dans fluid
+$TCA['tt_content']['types']['cbfoundation_breadcrumbs']['showitem'] = '--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,header;LLL:EXT:cms/locallang_ttc.xml:header.ALT.div_formlabel,
+																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
+																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
+																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
+																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
+																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
+																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended';
+
 ?>
