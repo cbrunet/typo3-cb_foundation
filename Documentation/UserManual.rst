@@ -104,3 +104,23 @@ since the controls are inside the video frame on Vimeo.
 You will find more information about `Flex Video`_ on the official Foundation documentation.
 
 .. _Flex Video: http://foundation.zurb.com/docs/components/flex_video.html
+
+
+.. _breadcrumbs:
+
+Breadcrumbs navigation
+======================
+
+This is a very simple plugin that add breadcrumbs navigation (rootline) to your page. Since you
+usually want the breadcrumbs to be present on every pages of your website, you should insert
+the breadcrumbs content element in a column that have the slide property set.
+
+Alternatively, you can directly insert the TypoScript object ``lib.cb_foundation.breadcrumbs``
+in your TypoScript template.
+
+If you are using Fluid template, you can include the breadcrumbs in your template like this:
+
+.. code-block:: html
+
+    <f:cObject typoscriptObjectPath="lib.cb_foundation.breadcrumbs" />
+    

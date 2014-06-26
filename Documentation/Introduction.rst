@@ -35,6 +35,7 @@ Actually, the following features are supported:
   * :ref:`orbit-slider`
   * :ref:`clearing-lightbox`
   * :ref:`flexvid`
+  * :ref:`breadcrumbs`
 
 More feature will peoabably be added in future releases.
 
