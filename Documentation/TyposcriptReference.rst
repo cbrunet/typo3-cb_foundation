@@ -36,6 +36,7 @@ what the TypoScript for Orbit looks like:
 	}
 
 ``page.jsFooterInline.65.20.20`` is for Clearing Lightbox options.
+``page.jsFooterInline.65.20.30`` is for Magellan options.
 
 If you need to add other parameters to the ``foundation`` function,
 you simply need to add new elements to the ``page.jsFooterInline.65.20`` COA.

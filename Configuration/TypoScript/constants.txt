@@ -31,3 +31,4 @@ plugin.tx_cbfoundation {
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Orbit/constants.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Clearing/constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Magellan/constants.ts">
