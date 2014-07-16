@@ -18,6 +18,18 @@
             <trans-unit id="flexvid.vimeo" xml:space="preserve">
                 <source>Vimeo</source>
             </trans-unit>
+            <trans-unit id="frame.panel" xml:space="preserve">
+                <source>Panel</source>
+            </trans-unit>
+            <trans-unit id="frame.panelradius" xml:space="preserve">
+                <source>Panel with radius</source>
+            </trans-unit>
+            <trans-unit id="frame.callout" xml:space="preserve">
+                <source>Callout</source>
+            </trans-unit>
+            <trans-unit id="frame.calloutradius" xml:space="preserve">
+                <source>Callout with radius</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
