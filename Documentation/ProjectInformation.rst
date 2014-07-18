@@ -63,5 +63,7 @@ Change Log
     * Upgraded Foundation to 5.3.0
     * Breadcrumbs plugin
 
-1.2.0:
+1.2.0: July 18, 2014
+	* Upgraded Foundation to 5.3.1
     * Magellan navigation plugin
+    * Panels as Frames for content elements

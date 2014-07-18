@@ -1,5 +1,5 @@
 
-mod.wizards.newContentElement.wizardItems.tx_cbfoundation {
+mod.wizards.newContentElement.wizardItems.foundation {
     header = Foundation
     elements {
         orbit {
