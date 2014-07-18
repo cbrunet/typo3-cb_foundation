@@ -26,8 +26,14 @@ mod.wizards.newContentElement.wizardItems.tx_cbfoundation {
             description = Breadcrumbs navigation (rootline)
             tt_content_defValues.CType = cbfoundation_breadcrumbs
         }
+        magellan {
+            icon = ../typo3conf/ext/cb_foundation/Resources/Public/Icons/magellan.gif
+            title = Magellan
+            description = Magellan expedition (section index menu)
+            tt_content_defValues.CType = cbfoundation_magellan
+        }
     }
-    show = orbit, clearing, flexvid, breadcrumbs
+    show = orbit, clearing, flexvid, breadcrumbs, magellan
 }
 
 TCEFORM {

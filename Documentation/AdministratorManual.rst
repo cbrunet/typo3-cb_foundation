@@ -27,7 +27,7 @@ Upgrading
 ---------
 
 When you upgrade Foundation framework, do not forget to regenerate the CSS files of your project against
-the new Foundation SCSS files. 
+the new Foundation SCSS files. It may also be necessary to clear all CSS and JavaScript caches.
 
 .. _configuration:
 
@@ -176,11 +176,34 @@ Clearing Lightbox configuration
 
 Under the **FOUNDATION.CLEARING** category.
 
-plugin.tx_cbfoundation.settingsclearing.close_selectors
+plugin.tx_cbfoundation.settings.clearing.close_selectors
     Specify the classes or IDs will close clearing when clicked. (default: '.clearing-close').
 
-plugin.tx_cbfoundation.settingsclearing.touch_label
+plugin.tx_cbfoundation.settings.clearing.touch_label
     Label for touch environment. (default: '&larr;&nbsp;Swipe to Advance&nbsp;&rarr;').
+
+
+
+
+.. _magellan-configuration:
+
+Magellan configuration
+----------------------
+
+Under the **FOUNDATION.MAGELLAN** category.
+
+plugin.tx_cbfoundation.settings.magellan.active_class
+    Specify the class used for active sections (default: 'active')
+
+plugin.tx_cbfoundation.settings.magellan.threshold
+    How many pixels until the magellan bar sticks (default: 0 = auto).
+
+plugin.tx_cbfoundation.settings.magellan.destination_threshold
+    Pixels from the top of destination for it to be considered active (default: 20).
+
+plugin.tx_cbfoundation.settings.magellan.throttle_delay
+    Calculation throttling to increase framerate (default: 50)
+
 
 Customizing CSS
 ===============

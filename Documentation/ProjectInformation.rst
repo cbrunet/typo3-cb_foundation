@@ -41,15 +41,13 @@ There is still a lot to do on this project. Here are some random ideas:
 
 * Improve documentation, add some examples...
 * Integrate functionnalities with RTE (buttons, labels, keystrokes, tooltips...)
-* Provide other plugins (breakcrumbs, magellan sticky nav, ...)
+* Provide other plugins
 * Include a SASS compiler
 * Replace Orbit with Slick Carousel
 
 
 Change Log
 -----------
-
-.. Link to changelog
 
 1.0.0: June 12, 2014
     * Initial release
@@ -60,3 +58,10 @@ Change Log
 
 1.0.1: June 15, 2014
     * Minor bug that prevented documentation generation
+
+1.1.0: June 26, 2014
+    * Upgraded Foundation to 5.3.0
+    * Breadcrumbs plugin
+
+1.2.0:
+    * Magellan navigation plugin

@@ -123,6 +123,18 @@
              <trans-unit id="clearing.touch_label" xml:space="preserve">
              	<source>Touch label: (default: '&amp;larr;&amp;nbsp;Swipe to Advance&amp;nbsp;&amp;rarr;').</source>
              </trans-unit>
+             <trans-unit id="magellan.active_class" xml:space="preserve">
+                  <source>Active class: Specify the class used for active sections (default: 'active').</source>
+             </trans-unit>
+            <trans-unit id="magellan.threshold" xml:space="preserve">
+                  <source>Threshold: How many pixels until the magellan bar sticks (default: 0 = auto).</source>
+             </trans-unit>
+             <trans-unit id="magellan.destination_threshold" xml:space="preserve">
+                  <source>Destination threshold: Pixels from the top of destination for it to be considered active (default: 20).</source>
+             </trans-unit>
+             <trans-unit id="magellan.throttle_delay" xml:space="preserve">
+                  <source>Throttle delay: Calculation throttling to increase framerate (default: 50).</source>
+             </trans-unit>
 		</body>
 	</file>
 </xliff>

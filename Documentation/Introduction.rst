@@ -36,6 +36,7 @@ Actually, the following features are supported:
   * :ref:`clearing-lightbox`
   * :ref:`flexvid`
   * :ref:`breadcrumbs`
+  * :ref:`magellan`
 
 More feature will peoabably be added in future releases.
 

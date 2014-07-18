@@ -123,4 +123,23 @@ If you are using Fluid template, you can include the breadcrumbs in your templat
 .. code-block:: html
 
     <f:cObject typoscriptObjectPath="lib.cb_foundation.breadcrumbs" />
-    
+
+.. _magellan:
+
+Magellan sticky navigation
+==========================
+
+Magellan is a style-agnostic plugin that lets you give your site sticky navigation.
+This fixed-position navigation helps users keep track of where they are on a page without scrolling.
+
+You can insert the Magellan plugin on a page. By default, you get internal navigation
+(section index) for every content elements of column 0 having ``Show in Section Menus`` option
+enabled (on ``Access`` tab).
+
+Alternatively, you can directly insert the TypoScript object ``lib.cb_foundation.magellan``
+in your TypoScript template.
+If you are using Fluid template, you can include the breadcrumbs in your template like this:
+
+.. code-block:: html
+
+    <f:cObject typoscriptObjectPath="lib.cb_foundation.magellan" />

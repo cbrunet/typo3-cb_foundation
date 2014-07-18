@@ -16,6 +16,8 @@ if (!defined('TYPO3_MODE')) {
 		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/flexvid_ct.gif');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Breadcrumbs navigation', 'cbfoundation_breadcrumbs',
 		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/breadcrumbs_ct.gif'), 'CType');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Magellan expedition', 'cbfoundation_magellan',
+		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/magellan_ct.gif'), 'CType');
 
 
 $TCA['tt_content']['types']['cbfoundation_orbit']['showitem'] = "--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
@@ -52,5 +54,12 @@ $TCA['tt_content']['types']['cbfoundation_breadcrumbs']['showitem'] = '--palette
 																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
 																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
 																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended';
+$TCA['tt_content']['types']['cbfoundation_magellan']['showitem'] = '--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,header;LLL:EXT:cms/locallang_ttc.xml:header.ALT.div_formlabel,
+																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
+																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
+																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
+																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
+																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
+																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended';																	  
 
 ?>
