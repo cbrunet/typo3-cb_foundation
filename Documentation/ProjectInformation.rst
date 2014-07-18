@@ -7,7 +7,7 @@ Project Information
 
 This is |extension_name| (|extension_key|) version |extension_version|.
 
-Based on `Zurb Foundation`_, version **5.2.3**.
+Based on `Zurb Foundation`_, version **5.3.1**.
 
 Developped, maintained and documented by |author|, for personnal projects,
 but shared to the world.
@@ -51,7 +51,7 @@ Change Log
 
 1.0.0: June 12, 2014
     * Initial release
-    * Orbit slider, Clearing lightbox, and Flexible video plugins
+    * :ref:`orbit-slider`, :ref:`clearing-lightbox`, and :ref:`flexvid` plugins
 
 .. _TYPO3 extension repository: http://typo3.org/extensions/
 .. _Zurb Foundation: http://foundation.zurb.com/
@@ -61,9 +61,9 @@ Change Log
 
 1.1.0: June 26, 2014
     * Upgraded Foundation to 5.3.0
-    * Breadcrumbs plugin
+    * :ref:`breadcrumbs` plugin
 
 1.2.0: July 18, 2014
-	* Upgraded Foundation to 5.3.1
-    * Magellan navigation plugin
-    * Panels as Frames for content elements
+    * Upgraded Foundation to 5.3.1
+    * :ref:`magellan` plugin
+    * :ref:`panels` as Frames for content elements

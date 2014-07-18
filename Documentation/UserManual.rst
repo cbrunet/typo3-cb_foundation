@@ -11,7 +11,7 @@ Foundation gives you a lot of CSS classes and
 JavaScript functions you can integrate to your website. 
 In fact, you can use anything that is in the `official documentation`_.
 
-You simply need to integrade the needed markups and CSS classes to 
+You simply need to integrate the needed markups and CSS classes to 
 your HTML or Fluid templates. Here are some :ref:`examples`.
 
 However, to simplify the process, we already provide you some 
@@ -90,13 +90,13 @@ iframe, embed or object elements, you can wrap your video using this plugin to
 create an intrinsic ratio that will properly scale your video on any device.
 
 The plugin configuration is very similar to raw HTML content element.
-In the source field, you simply paste the embeding code you grap from YouTube,
+In the source field, you simply paste the embedding code you grab from YouTube,
 Vimeo, or any other source.
 
 .. figure:: Images/flexvid.png
     :alt: Flexible video plugin configuration
 
-On the *Appearence* tab, there are two checkboxes. If **widescreen** is checked,
+On the *Appearance* tab, there are two checkboxes. If **widescreen** is checked,
 the aspect ratio of the video is set to 16:9, otherwise is it 4:3.
 If **vimeo** is checked, the space reserved for play controls is removed,
 since the controls are inside the video frame on Vimeo.
@@ -133,7 +133,7 @@ Magellan is a style-agnostic plugin that lets you give your site sticky navigati
 This fixed-position navigation helps users keep track of where they are on a page without scrolling.
 
 You can insert the Magellan plugin on a page. By default, you get internal navigation
-(section index) for every content elements of column 0 having ``Show in Section Menus`` option
+(section index) for every content elements of all columns having ``Show in Section Menus`` option
 enabled (on ``Access`` tab).
 
 Alternatively, you can directly insert the TypoScript object ``lib.cb_foundation.magellan``
@@ -143,3 +143,21 @@ If you are using Fluid template, you can include the breadcrumbs in your templat
 .. code-block:: html
 
     <f:cObject typoscriptObjectPath="lib.cb_foundation.magellan" />
+
+
+.. _panels:
+
+Panels
+======
+
+A panel is a simple, helpful Foundation component that enables you to outline
+sections of your page easily. This allows you to view your page sections as
+you add content to them, or add emphasis to a section.
+
+We simply added panels as frame style for content elements. It means you
+can easily add the panel around any kind of content element. Four panel
+styles are available: panel, panel with radius, callout, and callout
+with radius.
+
+.. figure:: Images/panel.png
+    :alt: Panels in Indentation and Frames settings

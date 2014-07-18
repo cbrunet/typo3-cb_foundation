@@ -43,7 +43,7 @@ Under the **FOUNDATION** category.
 
 plugin.tx_cbfoundation.settings.js.loadall
     If **true**, all needed Foundation JavaScript libraries are loaded. Otherwise,
-    this is your responsability to load all the Foundation JavaScript components
+    this is your responsibility to load all the Foundation JavaScript components
     you need. Those components are located into
     ``EXT:cb_foundation/Resources/Public/JavaScript/foundation/``.
 
@@ -51,17 +51,17 @@ plugin.tx_cbfoundation.settings.js.jquery
     If **typo3**, loads *jquery* included in TYPO3 installation.
     If **ext**, loads *jquery* from the extension. In that case, you should
     take care of not loading *jquery* twice, from another extension for example.
-    If **no**, do not loads *jquery*. This is then your responsability to ensure
+    If **no**, do not loads *jquery*. This is then your responsibility to ensure
     *jquery* is loaded from somewhere else.
 
 plugin.tx_cbfoundation.settings.js.modernizr
     If **true**, includes *modernizr*, and add *no-js* class to the *html* tag.
-    If **false**, it is your responsability to include it.
+    If **false**, it is your responsibility to include it.
     *modernizr* is a JavaScript script that test the browser for various HTML5 and CSS3 features.
 
 plugin.tx_cbfoundation.settings.viewport
     If **true**, add the *viewport* meta tag needed for Foundation, in the header of the document.
-    If **false**, it is your responsability to add this meta information to the document.
+    If **false**, it is your responsibility to add this meta information to the document.
 
 .. _orbit-configuration:
 
@@ -235,7 +235,7 @@ Custom Foundation CSS
 ---------------------
 
 A other simple way to customize the CSS of your website is to generate the
-custome CSS file using the tool_ on the Foundation website. After downloading
+custom CSS file using the tool_ on the Foundation website. After downloading
 the generated zip archive, you simply need to copy the
 ``css/foundation.min.css`` file somewhere on your website installation, and to
 modify the ``plugin.tx_cbfoundation.settings.css_path`` TypoScript constant to point to it,
@@ -254,7 +254,7 @@ allowing to simplify the process of managing large and complex style sheets.
 It includes variables, nesting, mixins, inheritance, etc.
 
 Sass (or scss) files need to be compiled to normal CSS files, in order to use it.
-To do so, you need the sass processor, which is a command line tool writen in Ruby.
+To do so, you need the sass processor, which is a command line tool written in Ruby.
 However, you do not want to think about regenerating CSS files each time you modify
 the scss file. This is why other tools exist to simplify the process. One of them
 is compass_. Compass also is written in Ruby. You simply need a configuration file,
@@ -276,7 +276,7 @@ Then, you need to install sass and compass:
     sudo gem install compass
 
 
-Using sass is the prefered way to customize foundation style sheets. However,
+Using sass is the preferred way to customize foundation style sheets. However,
 this require a little more setup. Here are the required steps to use it along
 with this TYPO3 |extension_name| extension:
 

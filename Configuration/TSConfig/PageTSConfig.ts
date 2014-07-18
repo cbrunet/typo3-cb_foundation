@@ -1,5 +1,5 @@
 
-mod.wizards.newContentElement.wizardItems.foundation {
+mod.wizards.newContentElement.wizardItems.Foundation {
     header = Foundation
     elements {
         orbit {
@@ -33,7 +33,7 @@ mod.wizards.newContentElement.wizardItems.foundation {
             tt_content_defValues.CType = cbfoundation_magellan
         }
     }
-    show = orbit, clearing, flexvid, breadcrumbs, magellan
+    show := addToList(orbit, clearing, flexvid, breadcrumbs, magellan)
 }
 
 TCEFORM {

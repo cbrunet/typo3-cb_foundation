@@ -3,18 +3,18 @@ Configuration Reference
 =========================
 
 
-Foundation JavaScript initialisation
+Foundation JavaScript initialization
 ====================================
 
-Functionnalities of Foundation that rely on JavaScript are initialized by
+Functionalities of Foundation that rely on JavaScript are initialized by
 calling the ``foundation`` JavaScript function. In order to call it using the
 right parameters, we construct an inline JavaScript footer using
 ``page.jsFooterInline.65`` TypoScript setup. ``65`` is an arbitrary index. Please
 report a bug if it conflicts with any other TYPO3 extension.
 
-The parameters of the JavaScript function are built using Typoscript.
+The parameters of the JavaScript function are built using TypoScript.
 ``page.jsFooterInline.65.20`` is a ``COA`` and each value of it is 
-added as parameter of the ``fundation()`` function.
+added as parameter of the ``foundation()`` function.
 
 Orbit parameters are added to ``page.jsFooterInline.65.20.10``. Here is
 what the TypoScript for Orbit looks like:
