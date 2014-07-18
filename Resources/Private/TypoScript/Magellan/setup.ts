@@ -4,7 +4,7 @@ lib.cb_foundation.magellan {
 	1 {
 		sectionIndex = 1
 		sectionIndex.type = header
-		sectionIndex.useColPos = 0
+		sectionIndex.useColPos = -1
 		wrap = <div data-magellan-expedition="fixed"><dl class="sub-nav"> | </dl></div>
 		NO {
 			allWrap = <dd data-magellan-arrival="c{field:sectionIndex_uid}">|</dd>
