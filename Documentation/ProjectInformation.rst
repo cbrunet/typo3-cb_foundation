@@ -50,7 +50,7 @@ Change Log
 -----------
 
 1.2.1:
-	* 
+	* Upgraded Foundation to 5.3.3
 
 1.2.0: July 18, 2014
     * Upgraded Foundation to 5.3.1
