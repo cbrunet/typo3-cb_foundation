@@ -49,6 +49,21 @@ There is still a lot to do on this project. Here are some random ideas:
 Change Log
 -----------
 
+1.2.1:
+	* 
+
+1.2.0: July 18, 2014
+    * Upgraded Foundation to 5.3.1
+    * :ref:`magellan` plugin
+    * :ref:`panels` as Frames for content elements
+
+1.1.0: June 26, 2014
+    * Upgraded Foundation to 5.3.0
+    * :ref:`breadcrumbs` plugin
+
+1.0.1: June 15, 2014
+    * Minor bug that prevented documentation generation
+
 1.0.0: June 12, 2014
     * Initial release
     * :ref:`orbit-slider`, :ref:`clearing-lightbox`, and :ref:`flexvid` plugins
@@ -56,14 +71,4 @@ Change Log
 .. _TYPO3 extension repository: http://typo3.org/extensions/
 .. _Zurb Foundation: http://foundation.zurb.com/
 
-1.0.1: June 15, 2014
-    * Minor bug that prevented documentation generation
 
-1.1.0: June 26, 2014
-    * Upgraded Foundation to 5.3.0
-    * :ref:`breadcrumbs` plugin
-
-1.2.0: July 18, 2014
-    * Upgraded Foundation to 5.3.1
-    * :ref:`magellan` plugin
-    * :ref:`panels` as Frames for content elements

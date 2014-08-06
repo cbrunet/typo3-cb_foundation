@@ -28,6 +28,8 @@ Actually, the following features are supported:
   * Orbit slider
   * Clearing lightbox
   * Flexible video container
+  * Breadcrumbs navigation
+  * Magellan sticky navigation
 
 More feature will peoabably be added in future releases.
 
