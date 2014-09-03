@@ -4,10 +4,22 @@
 	<c:fal uid="{data.uid}">
 		<f:for each="{objects}" as="image">
 			<li>
-				<f:image src="{image.publicUrl}"
-						 alt="{image.alternative}"
-						 width="{f:if(condition: data.imagewidth, then: data.imagewidth)}"
-						 height="{f:if(condition: data.imageheight, then: data.imageheight)}"/>
+			<f:if condition="{image.link}">
+			<f:then>
+				<f:link.page pageUid="{image.link}">
+					<f:image src="{image.publicUrl}"
+							 alt="{image.alternative}"
+							 width="{f:if(condition: data.imagewidth, then: data.imagewidth)}"
+							 height="{f:if(condition: data.imageheight, then: data.imageheight)}"/>
+				</f:link.page>
+			</f:then>
+			<f:else>
+					<f:image src="{image.publicUrl}"
+							 alt="{image.alternative}"
+							 width="{f:if(condition: data.imagewidth, then: data.imagewidth)}"
+							 height="{f:if(condition: data.imageheight, then: data.imageheight)}"/>
+			</f:else>
+			</f:if>
 				<f:if condition="{image.description}">
 					<div class="{f:if(condition: settings.orbit.caption_class, then: settings.orbit.caption_class, else: 'orbit-caption')}">{image.description}</div>
 				</f:if>
