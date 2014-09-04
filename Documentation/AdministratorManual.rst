@@ -34,6 +34,17 @@ the new Foundation SCSS files. It may also be necessary to clear all CSS and Jav
 Configuration
 =============
 
+.. _ext-conf:
+
+Extension Configuration
+-----------------------
+
+useRTE
+    If the option is true (default), RTE default configuration will be adapted to use Foundation stylesheets.
+    Il will remove default classes and stylesheet of rtehtmlarea, and replace them with classes and
+    stylesheet from Foundation. See :ref:`rte` for more details.
+
+
 All the TypoScript constants can be edited using the constant editor. 
 
 General TypoScript constants

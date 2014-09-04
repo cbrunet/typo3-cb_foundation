@@ -1,4 +1,6 @@
-﻿=========================
+﻿.. include:: _IncludedDirectives.rst
+
+=========================
 Configuration Reference
 =========================
 
@@ -40,3 +42,19 @@ what the TypoScript for Orbit looks like:
 
 If you need to add other parameters to the ``foundation`` function,
 you simply need to add new elements to the ``page.jsFooterInline.65.20`` COA.
+
+.. _cust-rte:
+
+Customizing RTE
+===============
+
+If you need to adapt styles used in the RTE, copy can copy the ``EXT:cb_foundation/Resources/Private/Scss/rte.scss``
+file into the scss directory of your project. You will then need to change the value of 
+``RTE.default.contentCSS`` in the PageTSConfig. This is needed if you want to use custom values
+from your ``_settings.scss`` file, for example.
+
+The PageTSConfig loaded by |extension_key| will delete all previously defined classes in RTE. If you need
+to add other classes, or if you load an extension that modify RTE config, you should load it after
+|extension_key| is loaded.
+
+The RTE PageTSConfig of |extension_key| is defined in ``EXT:cb_foundation/Configuration/TSConfig/RTE.ts``

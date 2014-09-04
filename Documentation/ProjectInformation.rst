@@ -40,7 +40,6 @@ To Do
 There is still a lot to do on this project. Here are some random ideas:
 
 * Improve documentation, add some examples...
-* Integrate functionnalities with RTE (buttons, labels, keystrokes, tooltips...)
 * Provide other plugins
 * Include a SASS compiler
 * Replace Orbit with Slick Carousel
@@ -52,6 +51,7 @@ Change Log
 1.3.0:
     * Upgraded Foundation to 5.4.0
     * Handle links for images in :ref:`orbit-slider`
+    * Use of Foundation styles in RTE (labels, boutons, panels, etc.)
 
 1.2.1:
 	* Upgraded Foundation to 5.3.3

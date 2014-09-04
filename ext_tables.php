@@ -8,6 +8,11 @@ if (!defined('TYPO3_MODE')) {
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Configuration/TSConfig/PageTSConfig.ts">');
 
+$_EXTCONF = unserialize($_EXTCONF);
+if ($_EXTCONF['useRTE']) {
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Configuration/TSConfig/RTE.ts">');
+}
+
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($_EXTKEY, 'Orbit', 'Orbit Slider',
 		 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/orbit_ct.gif');
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($_EXTKEY, 'Clearing', 'Clearing Lightbox',

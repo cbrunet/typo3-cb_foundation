@@ -1,3 +1,5 @@
+.. include:: _IncludedDirectives.rst
+
 .. _introduction:
 
 ============
@@ -30,6 +32,7 @@ Actually, the following features are supported:
 * Includes all CSS and JS libraries of Foundation
 * Includes all SCSS files needed for customizing the CSS
 * Default CSS files for quick testing or prototyping
+* RTE configuration for using styles defined in Foundation
 * A few ready-to-use plugins:
 
   * :ref:`orbit-slider`

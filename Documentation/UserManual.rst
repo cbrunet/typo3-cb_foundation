@@ -1,4 +1,6 @@
-﻿============
+﻿.. include:: _IncludedDirectives.rst
+
+============
 Users manual
 ============
 
@@ -25,6 +27,67 @@ under the *Foundation* tab:
 .. _official documentation: http://foundation.zurb.com/docs/
 
 
+.. _rte:
+
+Using Foundation in the RTE
+===========================
+
+|extension_key| provides some custom configurations for the RTE.
+
+Configuration
+-------------
+
+To load RTE configuration, you must ensure that the ``useRTE`` option is checked in extension configuration.
+See :ref:`ext-conf` for more details.
+
+If you want to use inline elements, such as ``kyb`` (keystrokes) or ``cite`` (citations), you
+need to check the ``Enable additional inline elements`` option in the ``rtehtmlarea`` extension configuration.
+
+
+Types
+-----
+
+``text-left``, ``text-right``, ``text-center``, and ``text-justify`` block styles are available,
+and used for text alignment.
+
+``subheading`` style is available for heading elements (``h1`` to ``h6``).
+
+``circle``, ``square``, ``disc``, and ``no-bullet`` styles re available for unordered lists (``ul``).
+
+Long citations (``blockquote``) are styled using Foundation styles. However, to have access to the ``cite``
+button (for citing the author of the quotation), you need to be sure ``Enable additional inline elements``
+option is activated in rtehtmlarea configuration.
+
+Tables
+------
+
+Tables styles are used. Nothing special to configure there.
+
+Keystrokes
+----------
+
+Keystrokes are styled. Button is available if ``Enable additional inline elements``
+option is activated in rtehtmlarea configuration.
+
+Buttons
+-------
+
+Button style can be applied to any link. You can also configure button styles (``tiny``, ``small``,
+``large``, ``expand``, ``round``, ``radius``, ``secondary``, ``success``, ``alert``, ``disabled``).
+Finally, you can float it to ``left`` of ``right``.
+
+
+Labels
+------
+
+Label style can be applied to any text.  You can also configure button styles (``round``, ``radius``,
+``secondary``, ``success``, ``warning``, ``alert``).
+
+Panels
+------
+
+Panel style can be applied to containers (``div``). You can also apply ``callout`` to it.
+Finally, you can use ``radius`` on it.
 
 
 .. _orbit-slider:
