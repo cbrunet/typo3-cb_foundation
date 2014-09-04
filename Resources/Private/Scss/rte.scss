@@ -40,6 +40,8 @@
 // @import "foundation/components/visibility";
 
 
+div.indent { margin-left: 2em; }
+
 p.text-left, td.text-left, th.text-left, h1.text-left, h2.text-left, h3.text-left, h4.text-left, h5.text-left, h6.text-left, div.text-left, address.text-left { text-align: left; }
 p.text-center, td.text-center, th.text-center, h1.text-center, h2.text-center, h3.text-center, h4.text-center, h5.text-center, h6.text-center, div.text-center, address.text-center { text-align: center; }
 p.text-right, td.text-right, th.text-right, h1.text-right, h2.text-right, h3.text-right, h4.text-right, h5.text-right, h6.text-right, div.text-right, address.text-right { text-align: right; }
