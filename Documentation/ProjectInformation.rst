@@ -48,6 +48,9 @@ There is still a lot to do on this project. Here are some random ideas:
 Change Log
 -----------
 
+1.3.1:
+    * Upgraded Foundation to 5.4.3
+
 1.3.0:
     * Upgraded Foundation to 5.4.0
     * Handle links for images in :ref:`orbit-slider`
