@@ -50,6 +50,8 @@ Change Log
 
 1.3.1:
     * Upgraded Foundation to 5.4.3
+    * This new version of Foundation now uses Sass 3.4.0 / Compass 1.0.0.
+      Please upgrade (see :ref:`upgradesass` for details).
 
 1.3.0:
     * Upgraded Foundation to 5.4.0

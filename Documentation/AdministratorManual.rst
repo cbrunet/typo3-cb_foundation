@@ -329,6 +329,21 @@ file int the Css directory.
 .. _tool: http://foundation.zurb.com/develop/download.html#customizeFoundation
 
 
+.. _upgradesass:
+
+Upgrading SASS
+--------------
+
+If you are upgrating ``cb_foundation`` from version 1.3.0 and under to version
+1.3.1 and above, your also need to upgrade your Sass installation to at least
+version 3.4.0, and Compass to version 1.0.0.
+
+.. code-block:: sh
+
+    sudo gem update sass
+    sudo gem update compass
+
+
 Customizing templates
 =====================
 
