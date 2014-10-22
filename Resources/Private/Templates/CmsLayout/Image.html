@@ -6,10 +6,12 @@ Foundation: <strong>
 </strong><br/>
 <c:fal uid="{data.uid}">
 	<f:for each="{objects}" as="image">
+	<f:if condition="{image.properties.hidden} != 1">
 		<c:beimage src="{image.publicUrl}"
 				 alt="{image.alternative}"
 				 title="{image.description}"
 				 maxWidth="64"
 				 maxHeight="64"/>
+	</f:if>
 	</f:for>
 </c:fal>

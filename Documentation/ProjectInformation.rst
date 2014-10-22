@@ -48,6 +48,10 @@ There is still a lot to do on this project. Here are some random ideas:
 Change Log
 -----------
 
+1.3.2:
+    * Upgraded Foundation to 5.4.6
+    * Do not display hidden images on backend preview of Orbit / Clearing
+
 1.3.1:
     * Upgraded Foundation to 5.4.3
     * This new version of Foundation now uses Sass 3.4.0 / Compass 1.0.0.
