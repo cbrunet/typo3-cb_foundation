@@ -334,14 +334,20 @@ file int the Css directory.
 Upgrading SASS
 --------------
 
-If you are upgrating ``cb_foundation`` from version 1.3.0 and under to version
-1.3.1 and above, your also need to upgrade your Sass installation to at least
-version 3.4.0, and Compass to version 1.0.0.
+If you previously upgraded to ``cb_foundation`` version 1.3.1, you needed to upgrade
+Sass to version 3.4.0. Howvere, Foundation finally decided to drop support for Sass 3.4
+and to revert to Sass 3.3 (or 3.2). If you already upgraded your Sass installation,
+you will need to downgrade it:
 
 .. code-block:: sh
 
-    sudo gem update sass
-    sudo gem update compass
+    sudo gem install sass -v 3.3.14
+    sudo gem uninstall sass
+
+and select the installed version 3.4 to uninstall it. Compass will issue deprecation warnings,
+those are only warnings, and you can ignore them. You can add ``disable_warnings = true`` to
+your ``config.rb`` file to disable them.
+
 
 
 Customizing templates

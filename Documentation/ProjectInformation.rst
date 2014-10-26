@@ -7,7 +7,7 @@ Project Information
 
 This is |extension_name| (|extension_key|) version |extension_version|.
 
-Based on `Zurb Foundation`_, version **5.3.1**.
+Based on `Zurb Foundation`_, version **5.4.6**.
 
 Developped, maintained and documented by |author|, for personnal projects,
 but shared to the world.
@@ -50,6 +50,7 @@ Change Log
 
 1.3.2:
     * Upgraded Foundation to 5.4.6
+    * This new version of Foundation reverts to Sass 3.3 (see :ref:`upgradesass` for details).
     * Do not display hidden images on backend preview of Orbit / Clearing
 
 1.3.1:
