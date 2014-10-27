@@ -33,4 +33,6 @@ Actually, the following features are supported:
 
 More feature will peoabably be added in future releases.
 
+Official documentation `can be found here <http://docs.typo3.org/typo3cms/extensions/cb_foundation/>`_.
+
 .. _foundation: http://http://foundation.zurb.com/
