@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-03-26T12:27:09Z" product-name="cb_foundation">
+        <header/>
+        <body>
+            <trans-unit id="tx_cbfoundation_hide.description" xml:space="preserve">
+                <source>Hide the content element, for given screen size, or orientation. It is also possible to show or hide on touch devices.</source>
+            </trans-unit>
+            <trans-unit id="tx_cbfoundation_hidden.description" xml:space="preserve">
+                <source>Hide the content element, for given screen size (but not on screen reader). The element still takes place on the screen.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

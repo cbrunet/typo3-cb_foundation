@@ -30,6 +30,42 @@
             <trans-unit id="frame.calloutradius" xml:space="preserve">
                 <source>Callout with radius</source>
             </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_visibility" xml:space="preserve">
+                <source>Visibility (Foundation)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_hide" xml:space="preserve">
+                <source>Hide on</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_hidden" xml:space="preserve">
+                <source>Hidden on</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_small" xml:space="preserve">
+                <source>small</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_medium" xml:space="preserve">
+                <source>medium</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_large" xml:space="preserve">
+                <source>large</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_xlarge" xml:space="preserve">
+                <source>x-large</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_xxlarge" xml:space="preserve">
+                <source>xx-large</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_portrait" xml:space="preserve">
+                <source>portrait</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_landscape" xml:space="preserve">
+                <source>landscape</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_htouch" xml:space="preserve">
+                <source>hide for touch</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_stouch" xml:space="preserve">
+                <source>show for touch</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
