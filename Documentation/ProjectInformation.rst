@@ -48,25 +48,26 @@ There is still a lot to do on this project. Here are some random ideas:
 Change Log
 -----------
 
-1.3.3:
+1.4.0: November 05, 2014
     * Upgraded Foundation to 5.4.7
+    * Added :ref:`visibility`
 
-1.3.2:
+1.3.2: October 27, 2014
     * Upgraded Foundation to 5.4.6
     * This new version of Foundation reverts to Sass 3.3 (see :ref:`upgradesass` for details).
     * Do not display hidden images on backend preview of Orbit / Clearing
 
-1.3.1:
+1.3.1: September 15, 2014
     * Upgraded Foundation to 5.4.3
     * This new version of Foundation now uses Sass 3.4.0 / Compass 1.0.0.
       Please upgrade (see :ref:`upgradesass` for details).
 
-1.3.0:
+1.3.0: September 04, 2014
     * Upgraded Foundation to 5.4.0
     * Handle links for images in :ref:`orbit-slider`
     * Use of Foundation styles in RTE (labels, boutons, panels, etc.)
 
-1.2.1:
+1.2.1: August 06, 2014
 	* Upgraded Foundation to 5.3.3
 
 1.2.0: July 18, 2014

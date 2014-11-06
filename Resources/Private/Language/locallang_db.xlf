@@ -34,10 +34,10 @@
                 <source>Visibility (Foundation)</source>
             </trans-unit>
             <trans-unit id="tt_content.tx_cbfoundation_hide" xml:space="preserve">
-                <source>Hide on</source>
+                <source>Hide for</source>
             </trans-unit>
             <trans-unit id="tt_content.tx_cbfoundation_hidden" xml:space="preserve">
-                <source>Hidden on</source>
+                <source>Hidden for</source>
             </trans-unit>
             <trans-unit id="tt_content.tx_cbfoundation_small" xml:space="preserve">
                 <source>small</source>

@@ -32,6 +32,7 @@ Actually, the following features are supported:
 * Includes all CSS and JS libraries of Foundation
 * Includes all SCSS files needed for customizing the CSS
 * Default CSS files for quick testing or prototyping
+* Settings for :ref:`visibility`, to hide or show elements based on screen size
 * RTE configuration for using styles defined in Foundation
 * A few ready-to-use plugins:
 

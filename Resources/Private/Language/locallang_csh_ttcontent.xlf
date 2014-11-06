@@ -7,7 +7,7 @@
                 <source>Hide the content element, for given screen size, or orientation. It is also possible to show or hide on touch devices.</source>
             </trans-unit>
             <trans-unit id="tx_cbfoundation_hidden.description" xml:space="preserve">
-                <source>Hide the content element, for given screen size (but not on screen reader). The element still takes place on the screen.</source>
+                <source>Hide the content element, for given screen size (but not on screen reader).</source>
             </trans-unit>
         </body>
     </file>

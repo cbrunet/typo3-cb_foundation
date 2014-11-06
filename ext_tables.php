@@ -25,46 +25,5 @@ if ($_EXTCONF['useRTE']) {
 		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/magellan_ct.gif'), 'CType');
 
 
-$TCA['tt_content']['types']['cbfoundation_orbit']['showitem'] = "--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
-																 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,
-																 --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.images, image,
-																 --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
-																 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
-																 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.image_settings;image_settings,
-																 --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
-																 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-																 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access";
-$TCA['tt_content']['types']['cbfoundation_clearing']['showitem'] = "--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,
-																	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.images, image,
-																	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.image_settings;image_settings,
-																	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access";
-$TCA['tt_content']['types']['cbfoundation_flexvid']['showitem'] = "--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,
-																	--palette--;Source, bodytext;LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:palette.source,
-																	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,pi_flexform,
-																	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-																	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access";
-$TCA['tt_content']['columns']['pi_flexform']['config']['ds']['*,cbfoundation_flexvid'] = 'FILE:EXT:cb_foundation/Configuration/FlexForms/Flexvid.xml';
-$TCA['tt_content']['types']['cbfoundation_breadcrumbs']['showitem'] = '--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,header;LLL:EXT:cms/locallang_ttc.xml:header.ALT.div_formlabel,
-																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
-																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
-																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
-																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
-																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended';
-$TCA['tt_content']['types']['cbfoundation_magellan']['showitem'] = '--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,header;LLL:EXT:cms/locallang_ttc.xml:header.ALT.div_formlabel,
-																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
-																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
-																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
-																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-																	   --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
-																	   --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended';																	  
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tt_content', 'EXT:cb_foundation/Resources/Private/Language/locallang_csh_ttcontent.xlf');
 
-?>

@@ -27,6 +27,35 @@ under the *Foundation* tab:
 .. _official documentation: http://foundation.zurb.com/docs/
 
 
+.. _visibility:
+
+Visibility classes
+==================
+
+Visibility classes let you show or hide elements based on screen size or device orientation.
+You can use visibility classes to control which elements users see depending on their browsing environment.
+
+.. figure:: Images/visibility.png
+    :alt: Backend interface for visibility classes
+
+    Backend interface for visibility classes
+
+    Under the Access tab of any content element, you have checkboxes to show or hide the content
+    element, as a function of screen size, orientation, or touch capability.
+
+The first checkboxes are to hide elements based on the screen size. 
+Then you can hide content element based on orientation detection. On desktop, the orientation is almost always reported as landscape.
+You should not check both orientations, otherwise it will always be hidden.
+Finally, you can hide or show on touch enabled screens (as determined by Modernizr).
+
+The second set of checkboxes is for accessibility. Like the first row, it allows to hide content based
+on screen size. However, the element will still be visible on screen readers. For more informations,
+see `visibility documentation`_.
+
+
+.. _visibility documentation: http://foundation.zurb.com/docs/components/visibility.html
+
+
 .. _rte:
 
 Using Foundation in the RTE
@@ -40,7 +69,7 @@ Configuration
 To load RTE configuration, you must ensure that the ``useRTE`` option is checked in extension configuration.
 See :ref:`ext-conf` for more details.
 
-If you want to use inline elements, such as ``kyb`` (keystrokes) or ``cite`` (citations), you
+If you want to use inline elements, such as ``kbd`` (keystrokes) or ``cite`` (citations), you
 need to check the ``Enable additional inline elements`` option in the ``rtehtmlarea`` extension configuration.
 
 

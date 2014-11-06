@@ -69,7 +69,7 @@ class user_Foundation {
 			);
 		$classes[] = $hideclasses[$val];
 
-		return implode(' ', $classes);
+		return ' ' . implode(' ', $classes);
 	}
 
 	public function parseHiddenField($content, $conf) {
@@ -110,7 +110,7 @@ class user_Foundation {
 			'hidden', // 31 all!!!
 			);
 
-		return $hiddenclasses[$val];
+		return ' ' . $hiddenclasses[$val];
 	}
 
 }
