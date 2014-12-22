@@ -7,7 +7,7 @@ Project Information
 
 This is |extension_name| (|extension_key|) version |extension_version|.
 
-Based on `Zurb Foundation`_, version **5.4.7**.
+Based on `Zurb Foundation`_, version **5.5.0**.
 
 Developped, maintained and documented by |author|, for personnal projects,
 but shared to the world.
@@ -47,6 +47,10 @@ There is still a lot to do on this project. Here are some random ideas:
 
 Change Log
 -----------
+
+1.5.0: 
+    * Upgraded Foundation to 5.5.0
+    * Tested compatibility with TYPO3 7.0
 
 1.4.0: November 05, 2014
     * Upgraded Foundation to 5.4.7
