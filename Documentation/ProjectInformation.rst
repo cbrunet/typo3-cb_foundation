@@ -51,6 +51,7 @@ Change Log
 1.5.0: 
     * Upgraded Foundation to 5.5.0
     * Tested compatibility with TYPO3 7.0
+    * Switched extension state to beta, since no more major changes are planned
 
 1.4.0: November 05, 2014
     * Upgraded Foundation to 5.4.7
