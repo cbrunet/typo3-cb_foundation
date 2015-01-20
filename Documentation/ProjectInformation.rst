@@ -49,6 +49,7 @@ Change Log
 -----------
 
 1.5.1:
+    * Option to display or not Panels in *Indentation and Frames* menu.
 
 1.5.0: December 23, 2014
     * Upgraded Foundation to 5.5.0
