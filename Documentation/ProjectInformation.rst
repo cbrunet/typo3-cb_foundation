@@ -48,7 +48,9 @@ There is still a lot to do on this project. Here are some random ideas:
 Change Log
 -----------
 
-1.5.0: 
+1.5.1:
+
+1.5.0: December 23, 2014
     * Upgraded Foundation to 5.5.0
     * Tested compatibility with TYPO3 7.0
     * Switched extension state to beta, since no more major changes are planned
