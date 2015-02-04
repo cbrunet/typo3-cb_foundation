@@ -1,4 +1,7 @@
 
+plugin.tx_cbfoundation.settings.clearing {
+	categories =
+}
 
 # Clearing parameters
 page.jsFooterInline.65.20.20 = COA

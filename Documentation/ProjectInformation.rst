@@ -50,6 +50,7 @@ Change Log
 
 1.5.1:
     * Upgraded Foundation to 5.5.1
+    * Option to :ref:`categories-filter` images in Orbit slider or in Clearing lightbox.
     * Option to display or not Panels in *Indentation and Frames* menu.
 
 1.5.0: December 23, 2014

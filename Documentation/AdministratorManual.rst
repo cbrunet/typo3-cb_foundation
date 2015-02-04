@@ -44,6 +44,13 @@ useRTE
     Il will remove default classes and stylesheet of rtehtmlarea, and replace them with classes and
     stylesheet from Foundation. See :ref:`rte` for more details.
 
+addPanels
+    If the option is true (default), four options are added to the *Indentation and Frames*
+    menu of content objects: *Panel*, *Panel with radius*, *Callout*, and *Callout with radius*.
+    If you do not use those frames, or if it interfer with your own defined frames, you can
+    disable this options, and the *Indentation and Frames* menu will not be altered by
+    cb_foundation extension.
+
 
 All the TypoScript constants can be edited using the constant editor. 
 
@@ -214,6 +221,29 @@ plugin.tx_cbfoundation.settings.magellan.destination_threshold
 
 plugin.tx_cbfoundation.settings.magellan.throttle_delay
     Calculation throttling to increase framerate (default: 50)
+
+.. _categories-filter:
+
+Filter by categories
+--------------------
+
+It is possible to filter images displayed in *Orbit slider* or in *Clearing lightbox*
+using categories assigned to the file objects. You first need some categories to be
+defined. You can create them in the List module. The you need to assign categories to
+images. You can do it when you edit file properties in the Filelist module. 
+Finally, you assign the categories to display in `plugin.tx_cbfoundation.settings.orbit.categories`
+or `plugin.tx_cbfoundation.settings.clearing.categories` TypoScript setup.
+
+For instance, if you define
+
+.. code-block:: ts
+
+    plugin.tx_cbfoundation.settings.orbit.categories = 1,2
+
+only images having category id 1 or category id 2 (or both),
+and images having no category assigned, will be displayed.
+
+
 
 
 Customizing CSS

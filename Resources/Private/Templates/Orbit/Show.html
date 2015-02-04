@@ -1,7 +1,7 @@
 {namespace c=Cbrunet\CbFoundation\ViewHelpers}
 
 <ul data-orbit>
-	<c:fal uid="{data.uid}">
+	<c:fal uid="{data.uid}" categories="{settings.orbit.categories}">
 		<f:for each="{objects}" as="image">
 			<li>
 			<f:if condition="{image.link}">

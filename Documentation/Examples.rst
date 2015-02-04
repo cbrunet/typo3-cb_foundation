@@ -16,7 +16,7 @@ Accordion for DateMenu in News extension
 If you use news_ extension version 3.0.0, you can easily override any Fluid template used by the extension.
 All you need is to define the path to your custom templates in TypoScript, like:
 
-.. code-block:: typoscript
+.. code-block:: ts
 
   plugin.tx_news {
     view {

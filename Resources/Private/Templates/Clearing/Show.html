@@ -1,7 +1,7 @@
 {namespace c=Cbrunet\CbFoundation\ViewHelpers}
 
 <ul class="clearing-thumbs" data-clearing>
-	<c:fal uid="{data.uid}">
+	<c:fal uid="{data.uid}" categories="{settings.clearing.categories}">
 		<f:for each="{objects}" as="image">
 			<li>
 				<a href="{image.publicUrl}" class="th">

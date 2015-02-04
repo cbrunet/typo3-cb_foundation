@@ -1,6 +1,7 @@
 
 plugin.tx_cbfoundation.settings.orbit {
 	caption_class = {$plugin.tx_cbfoundation.settings.orbit.caption_class}
+	categories =
 }
 
 # Orbit parameters

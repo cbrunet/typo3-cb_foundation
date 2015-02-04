@@ -21,7 +21,7 @@ added as parameter of the ``foundation()`` function.
 Orbit parameters are added to ``page.jsFooterInline.65.20.10``. Here is
 what the TypoScript for Orbit looks like:
 
-.. code-block:: typoscript
+.. code-block:: ts
 
 	page.jsFooterInline.65.20.10 = COA
 	page.jsFooterInline.65.20.10 {
