@@ -48,6 +48,9 @@ There is still a lot to do on this project. Here are some random ideas:
 Change Log
 -----------
 
+1.5.2:
+    * Fixed incompatibility with older versions of PHP.
+
 1.5.1:
     * Upgraded Foundation to 5.5.1
     * Option to :ref:`categories-filter` images in Orbit slider or in Clearing lightbox.

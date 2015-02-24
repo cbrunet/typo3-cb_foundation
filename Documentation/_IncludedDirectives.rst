@@ -5,7 +5,7 @@
 .. |author| replace:: Charles Brunet <charles AT cbrunet.net>
 .. |extension_key| replace:: cb_foundation
 .. |extension_name| replace:: Foundation framework
-.. |extension_version| replace:: 1.4.0
+.. |extension_version| replace:: 1.5.2
 .. |typo3| image:: Images/Typo3.png
 .. |time| date:: %Y-%m-%d %H:%M
 

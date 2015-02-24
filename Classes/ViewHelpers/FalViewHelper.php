@@ -59,7 +59,8 @@ class FalViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper 
 			$from_table, $where_clause);
 
 		foreach ($files as $file) {
-			$uid = $file->getOriginalFile()->_getMetaData()['uid'];
+			$metadata = $file->getOriginalFile()->_getMetaData();
+			$uid = $metadata['uid'];
 			$stmt->execute(array(':uid' => $uid));
 			if ($stmt->rowCount() == 0) {
 				$filt_files[] = $file;
