@@ -7,7 +7,7 @@ Project Information
 
 This is |extension_name| (|extension_key|) version |extension_version|.
 
-Based on `Zurb Foundation`_, version **5.5.0**.
+Based on `Zurb Foundation`_, version **5.5.3**.
 
 Developped, maintained and documented by |author|, for personnal projects,
 but shared to the world.
@@ -47,6 +47,9 @@ There is still a lot to do on this project. Here are some random ideas:
 
 Change Log
 -----------
+
+1.5.3: October 18, 2015
+    * Upgraded Foundation to 5.5.3
 
 1.5.2: February 23, 2015
     * Fixed incompatibility with older versions of PHP.
