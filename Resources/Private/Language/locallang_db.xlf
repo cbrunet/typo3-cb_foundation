@@ -18,18 +18,7 @@
             <trans-unit id="flexvid.vimeo" xml:space="preserve">
                 <source>Vimeo</source>
             </trans-unit>
-            <trans-unit id="frame.panel" xml:space="preserve">
-                <source>Panel</source>
-            </trans-unit>
-            <trans-unit id="frame.panelradius" xml:space="preserve">
-                <source>Panel with radius</source>
-            </trans-unit>
-            <trans-unit id="frame.callout" xml:space="preserve">
-                <source>Callout</source>
-            </trans-unit>
-            <trans-unit id="frame.calloutradius" xml:space="preserve">
-                <source>Callout with radius</source>
-            </trans-unit>
+            
             <trans-unit id="tt_content.tx_cbfoundation_visibility" xml:space="preserve">
                 <source>Visibility (Foundation)</source>
             </trans-unit>
@@ -65,6 +54,22 @@
             </trans-unit>
             <trans-unit id="tt_content.tx_cbfoundation_stouch" xml:space="preserve">
                 <source>show for touch</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.tx_cbfoundation_callout" xml:space="preserve">
+                <source>Callout (Foundation)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_callout_activate" xml:space="preserve">
+                <source>Callout</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_callout_closable" xml:space="preserve">
+                <source>Closable</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_callout_color" xml:space="preserve">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_cbfoundation_callout_size" xml:space="preserve">
+                <source>Padding Size</source>
             </trans-unit>
         </body>
     </file>

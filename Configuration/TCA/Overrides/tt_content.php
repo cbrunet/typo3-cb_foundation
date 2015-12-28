@@ -66,7 +66,7 @@ $temporaryColumns = array (
             ),
         )
     ),
-	'tx_cbfoundation_hidden' => array (
+    'tx_cbfoundation_hidden' => array (
         'exclude' => 1,
         'label' => 'LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_hidden',
         'config' => array (
@@ -79,6 +79,48 @@ $temporaryColumns = array (
                 array('LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_large', ''),
                 array('LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_xlarge', ''),
                 array('LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_xxlarge', ''),
+            ),
+        )
+    ),
+    'tx_cbfoundation_callout' => array (
+        'exclude' => 1,
+        'label' => 'LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_callout',
+        'config' => array (
+            'type' => 'check',
+            'default'  => 0,
+            'cols' => 2,
+            'items' => array (
+                array('LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_callout_activate', ''),
+                array('LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_callout_closable', ''),
+            ),
+        )
+    ),
+    'tx_cbfoundation_callout_color' => array (
+        'exclude' => 1,
+        'label' => 'LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_callout_color',
+        'config' => array (
+            'type' => 'select',
+            'default'  => '',
+            'items' => array (
+                array('', ''),
+                array('Primary', 'primary'),
+                array('Secondary', 'secondary'),
+                array('Success', 'success'),
+                array('Warning', 'warning'),
+                array('Alert', 'alert'),
+            ),
+        )
+    ),
+	'tx_cbfoundation_callout_size' => array (
+        'exclude' => 1,
+        'label' => 'LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_callout_size',
+        'config' => array (
+            'type' => 'select',
+            'default'  => '',
+            'items' => array (
+                array('', ''),
+                array('Small', 'small'),
+                array('Large', 'large'),
             ),
         )
     ),
@@ -96,9 +138,23 @@ $temporaryColumns = array (
     ''
 );
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'tt_content',
+    'tx_cbfoundation_callout',
+    'tx_cbfoundation_callout, tx_cbfoundation_callout_color, tx_cbfoundation_callout_size',
+    ''
+);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content',
     '--palette--;LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_visibility;tx_cbfoundation_visibility',
+    '',
+    'after:linkToTop'
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'tt_content',
+    '--palette--;LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:tt_content.tx_cbfoundation_callout;tx_cbfoundation_callout',
     '',
 	'after:linkToTop'
 );

@@ -4,9 +4,9 @@ add_import_path "../cb_foundation/Resources/Private/Scss/foundation"
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "Resources/Public/Css"
-sass_dir = "Resources/Private/scss"
+sass_dir = "Resources/Private/Scss"
 images_dir = "Resources/Public/Img"
-javascripts_dir = "Resources/Public/JS"
+javascripts_dir = "Resources/Public/JavaScript"
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = :compressed
@@ -26,4 +26,4 @@ line_comments = false
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
 # sass 3.3 and Foundation 5.4.6 result in a lot of warnings, so disable them
-disable_warnings = true
+# disable_warnings = true

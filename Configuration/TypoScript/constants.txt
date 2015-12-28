@@ -14,21 +14,33 @@ plugin.tx_cbfoundation {
 	}
 
 	settings {
-		#cat=foundation/page/a; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:viewport
-		viewport = 1
+		meta {
+			#cat=foundation/page/a; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:meta.viewport
+			viewport = 1
+			#cat=foundation/page/b; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:meta.ieedge
+			ieedge = 1
+			#cat=foundation/page/c; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:meta.mq
+			mq = 1
+		}
 	
 		js {
-			#cat=foundation/js/a; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:js.loadall
-			loadall = 1
+			#cat=foundation/js/a; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:js.foundation
+			foundation = 1
 			#cat=foundation/js/b; type=options[no,ext,typo3]; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:js.jquery
-			jquery = typo3
-			#cat=foundation/js/c; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:js.modernizr
-			modernizr = 1
+			jquery = 1
+			#cat=foundation/js/c; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:js.whatinput
+			whatinput = 1
 		}
+
+		#cat=foundation/js/d; type=boolean; label=LLL:EXT:cb_foundation/Resources/Private/Language/locallang.xlf:motionui
+		motionui = 1
 	}
 	
 }
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Orbit/constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Clearing/constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Magellan/constants.ts">
+
+plugin.tx_news.settings.cssFile >
+
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Orbit/constants.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Clearing/constants.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Magellan/constants.ts">

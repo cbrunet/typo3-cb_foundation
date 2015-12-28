@@ -12,9 +12,6 @@ $_EXTCONF = unserialize($_EXTCONF);
 if ($_EXTCONF['useRTE']) {
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Configuration/TSConfig/RTE.ts">');
 }
-if ($_EXTCONF['addPanels']) {
-	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Configuration/TSConfig/SectionFrame.ts">');
-}
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($_EXTKEY, 'Orbit', 'Orbit Slider',
 		 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/orbit_ct.gif');

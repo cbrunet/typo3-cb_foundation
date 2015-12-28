@@ -8,22 +8,28 @@ plugin.tx_cbfoundation {
 }
 
 
-[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.viewport}]
-	page.headerData.65 = TEXT
-	page.headerData.65.stdWrap.wrap = <meta name="viewport" content="|" />
-	page.headerData.65.value = width=device-width, initial-scale=1.0
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.meta.viewport}]
+	# page.headerData.65 = TEXT
+	# page.headerData.65.stdWrap.wrap = <meta name="viewport" content="|">
+	# page.headerData.65.value = width=device-width, initial-scale=1.0
+	page.meta.viewport = width=device-width, initial-scale=1.0
 [global]
 
-[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.js.modernizr}]
-	config.htmlTag_setParams = class="no-js"
-	page.includeJS.modernizr = EXT:cb_foundation/Resources/Public/JavaScript/vendor/modernizr.js
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.meta.mq}]
+	page.meta.foundation-mq = foundation-mq
+	page.meta.foundation-mq.attribute = class
+	# page.headerData.66 = TEXT
+	# page.headerData.66.stdWrap.wrap = <meta class="|">
+	# page.headerData.66.value = foundation-mq
+[global]
+
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.meta.ieedge}]
+	page.meta.X-UA-Compatible = IE=edge
+	page.meta.X-UA-Compatible.httpEquivalent = 1
 [global]
 
 
-[globalVar = LIT:ext = {$plugin.tx_cbfoundation.settings.js.jquery}]
-	page.includeJSFooter.jquery = EXT:cb_foundation/Resources/Public/JavaScript/vendor/jquery.js
-[global]
-[globalVar = LIT:typo3 = {$plugin.tx_cbfoundation.settings.js.jquery}]
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.js.jquery}]
 	page.javascriptLibs {
 	  jQuery = 1
 	  jQuery.version = latest
@@ -32,26 +38,52 @@ plugin.tx_cbfoundation {
 	}
 [global]
 
-
-[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.js.loadall}]
-	page.includeJSFooter.foundation = EXT:cb_foundation/Resources/Public/JavaScript/foundation.min.js
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.js.foundation}]
+	page.includeJSFooterlibs.foundation = EXT:cb_foundation/Resources/Public/JavaScript/foundation.js
+	page.jsFooterInline {
+		65 = TEXT
+		65.value = $(document).foundation();
+	}
 [global]
 
-page.jsFooterInline.65 = COA
-page.jsFooterInline.65 {
-	10 = TEXT
-	10.value = $(document).foundation(
-	20 = COA
-	20.stdWrap.wrap = {|}
-	20.stdWrap.required = 1
-	30 = TEXT
-	30.value = );
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.js.whatinput}]
+	page.includeJSFooterlibs.whatinput = EXT:cb_foundation/Resources/Public/JavaScript/vendor/what-input.min.js
+	page.includeJSFooterlibs.whatinput.forceOnTop = 1
+[global]
+
+[globalVar = LIT:1 = {$plugin.tx_cbfoundation.settings.motionui}]
+	page.includeJSFooterlibs.motionui = EXT:cb_foundation/Resources/Public/JavaScript/motion-ui.min.js
+	page.includeCSSLibs.motionui = EXT:cb_foundation/Resources/Public/Css/motion-ui.min.css
+[global]
+
+
+
+plugin.tx_news {
+	view {
+		templateRootPaths {
+			1 = EXT:cb_foundation/Resources/Private/Templates/News/
+		}
+
+		partialRootPaths {
+			1 = EXT:cb_foundation/Resources/Private/Partials/News/
+		}
+
+		widget.GeorgRinger\News\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:cb_foundation/Resources/Private/Templates/News/
+	}
 }
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Orbit/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Clearing/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Breadcrumbs/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Panel/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Magellan/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Visibility/setup.ts">
+lib.fluidContent {
+	settings.close_button = &times;
 
+	templateRootPaths.1 = EXT:cb_foundation/Resources/Private/Templates/FluidContent/
+	partialRootPaths.1 = EXT:cb_foundation/Resources/Private/Partials/FluidContent/
+	layoutRootPaths.1 = EXT:cb_foundation/Resources/Private/Layouts/FluidContent/
+}
+
+
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Orbit/setup.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Clearing/setup.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Breadcrumbs/setup.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Panel/setup.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Magellan/setup.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cb_foundation/Resources/Private/TypoScript/Visibility/setup.ts">

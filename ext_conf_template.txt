@@ -1,5 +1,2 @@
  # cat=basic/enable/10; type=boolean; label=Use RTE:Configure RTE to use styles defined by Foundation Framework.
 useRTE = 1
-
- # cat=basic/enable/11; type=boolean; label=Panel frame:Add panels to Indentation and Frames menu.
-addPanels = 1

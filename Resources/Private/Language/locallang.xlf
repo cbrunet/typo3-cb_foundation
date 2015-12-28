@@ -3,24 +3,31 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2014-03-26T12:27:09Z" product-name="cb_foundation">
 		<header/>
 		<body>
-		<trans-unit id="normalize_path" xml:space="preserve">
-            	<source>Path to normalize.css file.</source>
-        	</trans-unit>
         	<trans-unit id="css_path" xml:space="preserve">
             	<source>Path to foundation.css file.</source>
         	</trans-unit>
-			<trans-unit id="js.loadall" xml:space="preserve">
-            	<source>Include all: Include all Foundation JS libraries.</source>
+            <trans-unit id="js.foundation" xml:space="preserve">
+                  <source>Foundation JS: Include Foundation JS libraries.</source>
+            </trans-unit>
+		<trans-unit id="js.whatinput" xml:space="preserve">
+            	<source>Include what-input.js: Include what-input.js (needed by Foundation, recommanded)</source>
         	</trans-unit>
             <trans-unit id="js.jquery" xml:space="preserve">
-				<source>Include jquery: Include from TYPO3, from this extension, or do not include it.</source>
-			 </trans-unit>
-             <trans-unit id="js.modernizr" xml:space="preserve">
-             	<source>Include modernizr.</source>
+			<source>Include jquery: Include jquery from TYPO3 (needed by Foundation).</source>
+		</trans-unit>
+             <trans-unit id="meta.viewport" xml:space="preserve">
+                  <source>Add viewport meta tag.</source>
              </trans-unit>
-             <trans-unit id="viewport" xml:space="preserve">
-             	<source>Add viewport meta tag.</source>
+             <trans-unit id="meta.mq" xml:space="preserve">
+                  <source>mediaquery meta tag: Used by Foundation JS libraries.</source>
              </trans-unit>
+             <trans-unit id="meta.ieedge" xml:space="preserve">
+                  <source>Prevent IE compatibility mode.</source>
+             </trans-unit>
+             <trans-unit id="motionui" xml:space="preserve">
+             	<source>Include motion-ui: (Optional) Include javascript and css sources.</source>
+             </trans-unit>
+
              <trans-unit id="orbit.animation" xml:space="preserve">
             	<source>Animation style: Sets the type of animation used for transitioning between slides (default: slide).</source>
              </trans-unit>

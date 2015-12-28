@@ -1,4 +1,5 @@
 <?php
+namespace Cbrunet\CbFoundation\Hooks;
 
 class user_Foundation {
 
@@ -37,11 +38,11 @@ class user_Foundation {
 			'',
 			'hide-for-small-only', // 1 small
 			'hide-for-medium-only', // 2 medium
-			'show-for-large-up', // 3 small medium
+			'show-for-large', // 3 small medium
 			'hide-for-large-only', // 4 large
 			'hide-for-small-only hide-for-large-only', // 5 small large
 			'hide-for-medium-only hide-for-large-only', // 6 medium large
-			'show-for-xlarge-up', // 7 small medium large
+			'show-for-xlarge', // 7 small medium large
 			'hide-for-xlarge-only', // 8 xlarge
 			'hide-for-small-only hide-for-xlarge-only', // 9 small xlarge
 			'hide-for-medium-only hide-for-xlarge-only', // 10 medium xlarge
@@ -58,13 +59,13 @@ class user_Foundation {
 			'show-for-medium-only show-for-xlarge-only', // 21 small large xxlarge
 			'show-for-small-only show-for-xlarge-only', // 22 medium large xxlarge
 			'show-for-xlarge-only', // 23 small medium large xxlarge
-			'hide-for-xlarge-up', // 24 xlarge xxlarge
-			'hide-for-small-only hide-for-xlarge-up', // 25 small xlarge xxlarge
-			'hide-for-medium-only hide-for-xlarge-up', // 26 medium xlarge xxlarge
+			'hide-for-xlarge', // 24 xlarge xxlarge
+			'hide-for-small-only hide-for-xlarge', // 25 small xlarge xxlarge
+			'hide-for-medium-only hide-for-xlarge', // 26 medium xlarge xxlarge
 			'show-for-large-only', // 27 small medium xlarge xxlarge
-			'hide-for-large-up', // 28 large xlarge xxlarge
+			'hide-for-large', // 28 large xlarge xxlarge
 			'hide-for-medium-only', // 29 small large xlarge xxlarge
-			'hide-for-medium-up', // 30 medium large xlarge xxlarge
+			'hide-for-medium', // 30 medium large xlarge xxlarge
 			'hide', // 31 all!!!
 			);
 		$classes[] = $hideclasses[$val];
@@ -79,11 +80,11 @@ class user_Foundation {
 			'',
 			'hidden-for-small-only', // 1 small
 			'hidden-for-medium-only', // 2 medium
-			'visible-for-large-up', // 3 small medium
+			'visible-for-large', // 3 small medium
 			'hidden-for-large-only', // 4 large
 			'hidden-for-small-only hidden-for-large-only', // 5 small large
 			'hidden-for-medium-only hidden-for-large-only', // 6 medium large
-			'visible-for-xlarge-up', // 7 small medium large
+			'visible-for-xlarge', // 7 small medium large
 			'hidden-for-xlarge-only', // 8 xlarge
 			'hidden-for-small-only hidden-for-xlarge-only', // 9 small xlarge
 			'hidden-for-medium-only hidden-for-xlarge-only', // 10 medium xlarge
@@ -100,13 +101,13 @@ class user_Foundation {
 			'visible-for-medium-only visible-for-xlarge-only', // 21 small large xxlarge
 			'visible-for-small-only visible-for-xlarge-only', // 22 medium large xxlarge
 			'visible-for-xlarge-only', // 23 small medium large xxlarge
-			'hidden-for-xlarge-up', // 24 xlarge xxlarge
-			'hidden-for-small-only hidden-for-xlarge-up', // 25 small xlarge xxlarge
-			'hidden-for-medium-only hidden-for-xlarge-up', // 26 medium xlarge xxlarge
+			'hidden-for-xlarge', // 24 xlarge xxlarge
+			'hidden-for-small-only hidden-for-xlarge', // 25 small xlarge xxlarge
+			'hidden-for-medium-only hidden-for-xlarge', // 26 medium xlarge xxlarge
 			'visible-for-large-only', // 27 small medium xlarge xxlarge
-			'hidden-for-large-up', // 28 large xlarge xxlarge
+			'hidden-for-large', // 28 large xlarge xxlarge
 			'hidden-for-medium-only', // 29 small large xlarge xxlarge
-			'hidden-for-medium-up', // 30 medium large xlarge xxlarge
+			'hidden-for-medium', // 30 medium large xlarge xxlarge
 			'hidden', // 31 all!!!
 			);
 

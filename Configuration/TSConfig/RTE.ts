@@ -4,19 +4,19 @@ RTE {
 		proc {
 			allowedClasses = button,label,left,right,radius,round,large,small,tiny,expand,alert,success,warning,secondary,disabled,text-left,text-right,text-center,text-justify,panel,callout,subheader,square,circle,disc,no-bullet
 		}
-		showButtons := addToList(keyboard,citation)
+		showButtons := addToList(keyboard,citation,small,definitionlist, definitionitem)
 		buttons {
 			blockstyle {
 				tags {
-					div.allowedClasses = text-left,text-right,text-center,text-justify,panel,callout,radius
+					div.allowedClasses = text-left,text-right,text-center,text-justify,callout,primary,secondary,success,warning,alert,small,large
 					td.allowedClasses = text-left,text-right,text-center,text-justify
 					th.allowedClasses = text-left,text-right,text-center,text-justify
-					h1.allowedClasses = text-left,text-right,text-center,text-justify,subheader
-					h2.allowedClasses = text-left,text-right,text-center,text-justify,subheader
-					h3.allowedClasses = text-left,text-right,text-center,text-justify,subheader
-					h4.allowedClasses = text-left,text-right,text-center,text-justify,subheader
-					h5.allowedClasses = text-left,text-right,text-center,text-justify,subheader
-					h6.allowedClasses = text-left,text-right,text-center,text-justify,subheader
+					h1.allowedClasses = text-left,text-right,text-center,text-justify
+					h2.allowedClasses = text-left,text-right,text-center,text-justify
+					h3.allowedClasses = text-left,text-right,text-center,text-justify
+					h4.allowedClasses = text-left,text-right,text-center,text-justify
+					h5.allowedClasses = text-left,text-right,text-center,text-justify
+					h6.allowedClasses = text-left,text-right,text-center,text-justify
 					address.allowedClasses = text-left,text-right,text-center,text-justify
 					ul.allowedClasses = square,circle,disc,no-bullet
 				}
@@ -29,7 +29,7 @@ RTE {
 				}
 			}
 			link {
-				properties.class.allowedClasses = button,left,right,radius,round,large,small,tiny,expand,secondary,success,alert,disabled
+				properties.class.allowedClasses = button,left,right,large,small,tiny,expand,primary,secondary,success,alert,disabled,warning,hollow
 			}
 			left.useClass = text-left
 			right.useClass = text-right
@@ -52,12 +52,6 @@ RTE {
 		}
 		right {
 			name = Float right
-		}
-		radius {
-			name = Radius
-		}
-		round {
-			name = Round
 		}
 		large {
 			name = Large
@@ -106,35 +100,15 @@ RTE {
 			name = Justify
 			value = text-align: justify;
 		}
-		panel {
-			name = Panel
-			value = background-color: #f2f2f2;
-		}
 		callout {
 			name = Callout
-			value = background-color: #b6efff;
-		}
-		subheader {
-			name = Subheader
-			value = color: #6f6f6f;
-		}
-		square {
-			name = Square bullets
-		}
-		circle {
-			name = Circle bullets
-		}
-		disc {
-			name = Disc bullets
-		}
-		no-bullet {
-			name = No bullets
+			value = border: 1px solid black;
 		}
 	}
 	mutuallyExclusiveClasses {
 		align = text-left,text-right,text-center,text-justify
 		size = tiny,small,large
-		color = alert,warning,success,secondary
+		color = alert,warning,success,primary,secondary
 		shape = round,radius
 		liststyle = square,circle,disc,no-bullet
 	}

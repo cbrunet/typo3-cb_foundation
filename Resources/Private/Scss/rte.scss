@@ -1,102 +1,22 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-@import "settings";
-// @import "foundation/components/grid";
-// @import "foundation/components/accordion";
-// @import "foundation/components/alert-boxes";
-// @import "foundation/components/block-grid";
-// @import "foundation/components/breadcrumbs";
-// @import "foundation/components/button-groups";
-@import "foundation/components/buttons";
-// @import "foundation/components/clearing";
-// @import "foundation/components/dropdown";
-// @import "foundation/components/dropdown-buttons";
-// @import "foundation/components/flex-video";
-// @import "foundation/components/forms";
-// @import "foundation/components/icon-bar";
-// @import "foundation/components/inline-lists";
-// @import "foundation/components/joyride";
-@import "foundation/components/keystrokes";
-@import "foundation/components/labels";
-// @import "foundation/components/magellan";
-// @import "foundation/components/orbit";
-// @import "foundation/components/pagination";
-@import "foundation/components/panels";
-// @import "foundation/components/pricing-tables";
-// @import "foundation/components/progress-bars";
-// @import "foundation/components/range-slider";
-// @import "foundation/components/reveal";
-// @import "foundation/components/side-nav";
-// @import "foundation/components/split-buttons";
-// @import "foundation/components/sub-nav";
-// @import "foundation/components/switches";
-@import "foundation/components/tables";
-// @import "foundation/components/tabs";
-// @import "foundation/components/thumbs";
-// @import "foundation/components/tooltips";
-// @import "foundation/components/top-bar";
-@import "foundation/components/type";
-// @import "foundation/components/offcanvas";
-// @import "foundation/components/visibility";
+// @import 'settings';
+@import 'foundation';
 
+  @include foundation-global-styles;
+  @include foundation-typography;
+  @include foundation-button;
+  @include foundation-callout;
 
-div.indent { margin-left: 2em; }
-
-p.text-left, td.text-left, th.text-left, h1.text-left, h2.text-left, h3.text-left, h4.text-left, h5.text-left, h6.text-left, div.text-left, address.text-left { text-align: left; }
-p.text-center, td.text-center, th.text-center, h1.text-center, h2.text-center, h3.text-center, h4.text-center, h5.text-center, h6.text-center, div.text-center, address.text-center { text-align: center; }
-p.text-right, td.text-right, th.text-right, h1.text-right, h2.text-right, h3.text-right, h4.text-right, h5.text-right, h6.text-right, div.text-right, address.text-right { text-align: right; }
-p.text-justify, td.text-justify, th.text-justify, h1.text-justify, h2.text-justify, h3.text-justify, h4.text-justify, h5.text-justify, h6.text-justify, div.text-justify, address.text-justify { text-align: justify; }
-
-span.label {
-	@include label();
+// Dummy properties, to force element to be in the stylesheet
+// Otherwise, RTE do not see it
+p, div {
+	&.text-center, &.text-left, &.text-right, &.text-justify { visibility: visible; }
 }
-
-a.left, img.left, div.left { 
-	float: left !important;
+a.button, a.tiny, a.small, a.large, a.expanded, a.disabled, a.hollow { visibility: visible; }
+div.callout, div.small, div.large { visibility: visible; }
+a, div {
+	@each $name, $color in $foundation-colors {
+        &.#{$name} { visibility: visible; }
+    }
 }
-a.right, img.right, div.right { 
-	float: right !important; 
-}
-
-a.button {
-	@include button();
-}
-
-a.radius, span.radius, div.radius {
-	@include radius($global-radius);
-}
-
-a.round, span.round {
-	@include radius($global-rounded);
-}
-
-a.large  { @include button-size($padding:$button-lrg); }
-a.small  { @include button-size($padding:$button-sml); }
-a.tiny   { @include button-size($padding:$button-tny); }
-a.expand { @include button-size($padding:null,$full-width:true); }
-
-a.disabled  { @include button-style($bg:$button-bg-color, $disabled:true, $bg-hover:$button-bg-hover, $border-color:$button-border-color); }
-a.secondary { @include button-style($bg:$secondary-color, $bg-hover:$secondary-button-bg-hover, $border-color:$secondary-button-border-color); }
-a.success   { @include button-style($bg:$success-color, $bg-hover:$success-button-bg-hover, $border-color:$success-button-border-color); }
-a.alert     { @include button-style($bg:$alert-color, $bg-hover:$alert-button-bg-hover, $border-color:$alert-button-border-color); }
-
-span.alert     { @include label-style($alert-color); }
-span.warning   { @include label-style($warning-color); }
-span.success   { @include label-style($success-color); }
-span.secondary { @include label-style($secondary-color); }
-
-div.panel {
-	@include panel;
-}
-div.callout {
-	@include panel(scale-color($primary-color, $lightness: 94%));
-}
-
-h1,h2,h3,h4,h5,h6 {
-	&.subheader { @include subheader; }
-}
-
-ul.square { list-style-type: square !important; margin-#{$default-float}: $list-side-margin;}
-ul.circle { list-style-type: circle !important; margin-#{$default-float}: $list-side-margin;}
-ul.disc { list-style-type: disc !important; margin-#{$default-float}: $list-side-margin;}
-ul.no-bullet { list-style: none !important; }
