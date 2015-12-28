@@ -1,0 +1,35 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+<f:layout name="General" />
+<!--
+	=====================
+		Templates/News/DateMenu.html
+-->
+
+<f:section name="content">
+	<div class="news-menu-view">
+		<ul class="vertical menu" data-accordion-menu data-multi-open="false">
+			<f:for each="{data.single}" key="year" as="months" iteration="iter">
+				<li>
+					<a href="#">{year}</a>
+					<ul class="menu vertical nested{f:if(condition:'iter.isFirst' then:' is-active')}">
+						<f:for each="{months}" key="month" as="count">
+							<f:if condition="{0:year, 1:month} == {0:overwriteDemand.year, 1:overwriteDemand.month}">
+								<f:then>
+									<li class="item active">
+								</f:then>
+								<f:else>
+									<li class="item">
+								</f:else>
+							</f:if>
+								<f:link.action pageUid="{listPid}" arguments="{overwriteDemand:{year: year, month: month}}">
+								<span><f:translate key="month.{month}" /></span>
+								<span class="secondary badge">{count}</span>
+								</f:link.action>
+							</li>
+						</f:for>
+					</ul>
+				</li>
+			</f:for>
+		</ul>
+	</div>
+</f:section>

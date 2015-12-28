@@ -1,0 +1,9 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" 
+      xmlns:c="http://typo3.org/ns/Cbrunet/CbFoundation/ViewHelpers" data-namespace-typo3-fluid="true">
+<div id="c{data.uid}" class="{c:visibility(data:data)}">
+	<f:render partial="CalloutBegin" arguments="{_all}" />
+	<f:render section="content" />
+	<f:render partial="Footer" arguments="{_all}" />
+	<f:render partial="CalloutEnd" arguments="{_all}" />
+</div>
+</html>
