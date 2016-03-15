@@ -2,7 +2,7 @@ RTE {
 	default {
 		contentCSS = EXT:cb_foundation/Resources/Public/Css/rte.css
 		proc {
-			allowedClasses = button,label,left,right,radius,round,large,small,tiny,expand,alert,success,warning,secondary,disabled,text-left,text-right,text-center,text-justify,panel,callout,subheader,square,circle,disc,no-bullet
+			allowedClasses = button,label,left,right,radius,round,large,small,tiny,expand,alert,success,warning,secondary,disabled,text-left,text-right,text-center,text-justify,panel,callout,subheader,square,circle,disc,no-bullet,scroll,stack,hover,
 		}
 		showButtons := addToList(keyboard,citation,small,definitionlist, definitionitem)
 		buttons {
@@ -19,6 +19,7 @@ RTE {
 					h6.allowedClasses = text-left,text-right,text-center,text-justify
 					address.allowedClasses = text-left,text-right,text-center,text-justify
 					ul.allowedClasses = square,circle,disc,no-bullet
+					table.allowedClasses = hover,stack,scroll
 				}
 			}
 			textstyle {
