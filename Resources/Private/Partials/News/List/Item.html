@@ -131,6 +131,13 @@
 				</time>
 			</span>
 
+			<!-- author -->
+			<f:if condition="{newsItem.author}">
+				<span class="news-list-author">
+					<f:translate extensionName="News" key="author" arguments="{0:newsItem.author}"/>
+				</span>
+			</f:if>
+
 			<f:if condition="{newsItem.firstCategory}">
 				<!-- first category -->
 				<span class="label">{newsItem.firstCategory.title}</span>
@@ -143,13 +150,6 @@
 						{tag.title}
 				</span>
 					</f:for>
-			</f:if>
-
-			<!-- author -->
-			<f:if condition="{newsItem.author}">
-				<span class="news-list-author">
-					<f:translate extensionName="News" key="author" arguments="{0:newsItem.author}"/>
-				</span>
 			</f:if>
 		</p>
 	</div>
