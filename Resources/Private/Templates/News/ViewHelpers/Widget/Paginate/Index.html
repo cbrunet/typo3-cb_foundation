@@ -29,12 +29,12 @@
 		</f:if>
 
 		<div class="page-navigation">
-			<p>
+<!-- 			<p>
 				<f:translate key="paginate_overall" arguments="{0:pagination.current,1:pagination.numberOfPages}" />
-			</p>
-			<ul class="f3-widget-paginator">
+			</p> -->
+			<ul class="pagination text-center">
 				<f:if condition="{pagination.previousPage}">
-					<li class="previous">
+					<li class="pagination-previous">
 						<f:if condition="{pagination.previousPage} > 1">
 							<f:then>
 								<f:widget.link arguments="{currentPage: pagination.previousPage}">
@@ -55,7 +55,7 @@
 					</li>
 				</f:if>
 				<f:if condition="{pagination.hasLessPages}">
-					<li>....</li>
+					<li class="ellipsis"></li>
 				</f:if>
 				<f:for each="{pagination.pages}" as="page">
 					<f:if condition="{page.isCurrent}">
@@ -77,7 +77,7 @@
 					</f:if>
 				</f:for>
 				<f:if condition="{pagination.hasMorePages}">
-					<li>....</li>
+					<li class="ellipsis"></li>
 				</f:if>
 				<f:if condition="{pagination.displayRangeEnd} < {pagination.numberOfPages}">
 					<li class="last">
@@ -85,7 +85,7 @@
 					</li>
 				</f:if>
 				<f:if condition="{pagination.nextPage}">
-					<li class="last next">
+					<li class="last pagination-next">
 						<f:widget.link arguments="{currentPage: pagination.nextPage}">
 							<f:translate key="paginate_next" />
 						</f:widget.link>
