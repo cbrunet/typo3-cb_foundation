@@ -30,7 +30,7 @@ Then, you can create a custom template for DateMenu in ``EXT:myext/Resources/Pri
 
 .. code-block:: html
 
-  {namespace n=Tx_News_ViewHelpers}
+  {namespace n=GeorgRinger\News\ViewHelpers}
   <f:layout name="General" />
 
   <f:section name="content">

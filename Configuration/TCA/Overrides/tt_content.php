@@ -3,24 +3,8 @@ if (!defined('TYPO3_MODE')) {
         die ('Access denied.');
 }
 
-$GLOBALS['TCA']['tt_content']['types']['cbfoundation_orbit']['showitem'] = "--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
-                                                                 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,
-                                                                 --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.images, image,
-                                                                 --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
-                                                                 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
-                                                                 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.image_settings;image_settings,
-                                                                 --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
-                                                                 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-                                                                 --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access";
-$GLOBALS['TCA']['tt_content']['types']['cbfoundation_clearing']['showitem'] = "--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
-                                                                    --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,
-                                                                    --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.images, image,
-                                                                    --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.appearance,
-                                                                    --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
-                                                                    --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.image_settings;image_settings,
-                                                                    --div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
-                                                                    --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-                                                                    --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access";
+$GLOBALS['TCA']['tt_content']['types']['cbfoundation_orbit']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['image']['showitem'];
+$GLOBALS['TCA']['tt_content']['types']['cbfoundation_clearing']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['image']['showitem'];
 $GLOBALS['TCA']['tt_content']['types']['cbfoundation_flexvid']['showitem'] = "--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
                                                                     --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,
                                                                     --palette--;Source, bodytext;LLL:EXT:cb_foundation/Resources/Private/Language/locallang_db.xlf:palette.source,

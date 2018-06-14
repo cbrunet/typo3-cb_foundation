@@ -48,6 +48,9 @@ There is still a lot to do on this project. Here are some random ideas:
 Change Log
 -----------
 
+    * Fixed template for Orbit, to allow typo link attributes (e.g. _blank target).
+    * Fixed problem with backend editor for Orbit slider.
+
 1.5.3: October 18, 2015
     * Upgraded Foundation to 5.5.3
 

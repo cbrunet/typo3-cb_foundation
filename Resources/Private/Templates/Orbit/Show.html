@@ -6,12 +6,12 @@
 			<li>
 			<f:if condition="{image.link}">
 			<f:then>
-				<f:link.page pageUid="{image.link}">
+				<f:link.typolink parameter="{image.link}">
 					<f:image src="{image.publicUrl}"
 							 alt="{image.alternative}"
 							 width="{f:if(condition: data.imagewidth, then: data.imagewidth)}"
 							 height="{f:if(condition: data.imageheight, then: data.imageheight)}"/>
-				</f:link.page>
+				</f:link.typolink>
 			</f:then>
 			<f:else>
 					<f:image src="{image.publicUrl}"
